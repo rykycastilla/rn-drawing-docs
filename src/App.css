@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 340 82% 52%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 340 82% 52%;
+    --radius: 0.5rem;
+    --border-color: #1a1a1a;
+  }
+
+  .dark {
+    --background: 220 50% 10%;
+    --foreground: 0 0% 98%;
+    --card: 220 50% 13%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 50% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 340 82% 60%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 220 50% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 50% 15%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 340 50% 25%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 50% 20%;
+    --input: 220 50% 20%;
+    --ring: 340 82% 60%;
+    --border-color: #ffffff;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease-out forwards;
+}
+
+.dark .animate-fade-up,
+.light .animate-fade-up {
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.hero-section {
+  position: relative;
+  background-color: #ffb6c1;
+}
+
+.dark .hero-section {
+  background-color: #6b1f4c;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  right: 0;
+  height: 1000px;
+  background-color: inherit;
+  z-index: -1;
+}
+
+.error-page {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.error-page {
+  background: linear-gradient(to bottom, #ffb6c1 0%, #ffb6c1 70%, rgba(255, 255, 255, 1) 100%);
+}
+
+.dark .error-page {
+  background: linear-gradient(to bottom, #6b1f4c 0%, #6b1f4c 70%, rgba(10, 22, 40, 1) 100%);
+}
+
+.error-page::before {
+  content: "";
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  right: 0;
+  height: 1000px;
+  background-color: #ffb6c1;
+  z-index: -1;
+}
+
+.dark .error-page::before {
+  background-color: #6b1f4c;
+}
