@@ -1,4 +1,5 @@
 import HomeLink from './components/HomeLink'
+import ThemeToggle from './components/ThemeToggle'
 import { ReactElement } from 'react'
 
 const NavBar = (): ReactElement => {
@@ -7,6 +8,11 @@ const NavBar = (): ReactElement => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-6">
           <HomeLink />
+        </div>
+        <div className="flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-3">
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </header>

@@ -1,8 +1,7 @@
+import NavBar from '@/components/NavBar'
 import { Outlet } from 'react-router-dom'
 import { ReactElement } from 'react'
 import { ThemeProvider } from '@/libs/ui/hooks/theme'
-
-import NavBar from '@/components/NavBar'
 
 const HomeLayout = (): ReactElement => {
   return (
