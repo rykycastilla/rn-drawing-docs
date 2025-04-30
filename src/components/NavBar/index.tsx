@@ -1,3 +1,4 @@
+import GitHubButton from './components/GitHubButton'
 import HomeLink from './components/HomeLink'
 import ThemeToggle from './components/ThemeToggle'
 import { ReactElement } from 'react'
@@ -11,6 +12,7 @@ const NavBar = (): ReactElement => {
         </div>
         <div className="flex items-center gap-3">
           <div className="hidden md:flex items-center gap-3">
+            <GitHubButton />
             <ThemeToggle />
           </div>
         </div>
