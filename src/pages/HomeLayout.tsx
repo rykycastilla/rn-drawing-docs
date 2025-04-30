@@ -2,10 +2,17 @@ import { Outlet } from 'react-router-dom'
 import { ReactElement } from 'react'
 import { ThemeProvider } from '@/libs/ui/hooks/theme'
 
+import NavBar from '@/components/NavBar'
+
 const HomeLayout = (): ReactElement => {
   return (
     <ThemeProvider>
-      <Outlet />
+      <div className="flex flex-col min-h-screen">
+        <NavBar />
+        <main className="flex-1">
+          <Outlet />
+        </main>
+      </div>
     </ThemeProvider>
   )
 }
