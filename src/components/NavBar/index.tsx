@@ -1,7 +1,9 @@
 import GitHubButton from './components/GitHubButton'
 import HomeLink from './components/HomeLink'
+import MobileMenu from '@/components/MobileMenu'
 import ThemeToggle from './components/ThemeToggle'
 import { ReactElement } from 'react'
+import { REPO_NAME, REPO_OWNER } from '@/constants'
 
 const NavBar = (): ReactElement => {
   return (
@@ -12,9 +14,10 @@ const NavBar = (): ReactElement => {
         </div>
         <div className="flex items-center gap-3">
           <div className="hidden md:flex items-center gap-3">
-            <GitHubButton />
+            <GitHubButton repoName={ REPO_NAME } repoOwner={ REPO_OWNER } />
             <ThemeToggle />
           </div>
+          <MobileMenu />
         </div>
       </div>
     </header>
