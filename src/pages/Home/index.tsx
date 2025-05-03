@@ -1,11 +1,12 @@
+import CodeSampleSection from './components/CodeSampleSection'
+import HeroSection from './components/HeroSection'
 import { ReactElement } from 'react'
 
-import HeroSection from './components/HeroSection'
-
-const Home = (): ReactElement | null => {
+const Home = (): ReactElement => {
   return (
     <>
       <HeroSection />
+      <CodeSampleSection />
     </>
   )
 }

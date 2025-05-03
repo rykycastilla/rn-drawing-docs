@@ -1,0 +1,37 @@
+import Code from '@/components/Code'
+import { ReactElement } from 'react'
+
+const CodeSampleSection = (): ReactElement => {
+  return (
+    <section className="py-20 bg-gray-50 dark:bg-secondary">
+      <div className="container">
+        <h2 className="text-3xl font-bold text-center mb-10">Dibujar en React Native nunca ha sido tan fácil</h2>
+        <div className="max-w-3xl mx-auto">
+          <Code
+            language="tsx"
+            fileName="App.tsx">
+            {
+              `import { Draw, Tool } from 'react-native-drawing'
+import { ReactElement } from 'react'
+
+const App = (): ReactElement => {
+  return (
+    <Draw
+      resolution={ 720 }
+      color="red"
+      tool={ Tool.PENCIL }
+      onLoad={ () => console.log( 'Ready to Draw!' ) } />
+    )
+}
+
+export default App
+                `
+            }
+          </Code>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default CodeSampleSection
