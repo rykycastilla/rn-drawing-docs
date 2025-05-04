@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
 import { Outlet } from 'react-router-dom'
 import { ReactElement } from 'react'
@@ -11,6 +12,7 @@ const HomeLayout = (): ReactElement => {
         <main className="flex-1">
           <Outlet />
         </main>
+        <Footer />
       </div>
     </ThemeProvider>
   )
