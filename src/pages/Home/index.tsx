@@ -1,5 +1,6 @@
 import CodeSampleSection from './components/CodeSampleSection'
 import HeroSection from './components/HeroSection'
+import ToolsSection from './components/ToolsSection'
 import { ReactElement } from 'react'
 
 const Home = (): ReactElement => {
@@ -7,6 +8,7 @@ const Home = (): ReactElement => {
     <>
       <HeroSection />
       <CodeSampleSection />
+      <ToolsSection />
     </>
   )
 }

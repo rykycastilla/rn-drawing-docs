@@ -1,6 +1,5 @@
-import { ReactElement } from 'react'
-
 import HeroMockup from './HeroMockup'
+import { ReactElement } from 'react'
 
 const HeroSection = (): ReactElement => {
   return (
