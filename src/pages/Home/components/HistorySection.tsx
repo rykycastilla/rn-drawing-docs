@@ -1,3 +1,4 @@
+import { FootNote } from '@/hooks/foot_note'
 import { ReactElement } from 'react'
 
 const HistorySection = (): ReactElement => {
@@ -6,7 +7,11 @@ const HistorySection = (): ReactElement => {
       <div className="container text-center">
         <h2 className="text-3xl font-bold mb-10">Nunca olvides tu Historia</h2>
         <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-        Accede al historial completo de tus trazos y cambios con un simple gesto. Deshaz y rehaz sin límites.
+        Accede al historial completo de tus trazos y cambios con un simple gesto. Deshaz y rehaz sin límites
+          <FootNote>
+            Los limites de la cantidad de snapshots (versiones) del historial son establecidos en base a
+            la memoria total del dispositivo.
+          </FootNote>.
         </p>
       </div>
     </section>

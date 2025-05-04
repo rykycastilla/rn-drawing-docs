@@ -1,12 +1,17 @@
+import Legend from './components/Legend'
 import Link from './components/Link'
 import { REPO_NAME, REPO_OWNER } from '@/constants'
 import { ReactElement } from 'react'
+import { useFootNote } from '@/hooks/foot_note'
 
 const Footer = (): ReactElement => {
   const date = new Date()
   const year: number = date.getFullYear()
+  const footNoteList = useFootNote()
+  const thereIsFootNotes: boolean = footNoteList.length > 0
   return (
     <footer>
+      { thereIsFootNotes && <Legend footNoteList={ footNoteList } /> }
       <div className="border-t py-6 md:py-10 bg-background">
         <div className="container flex flex-col-reverse md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <div>
