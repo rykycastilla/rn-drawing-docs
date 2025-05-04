@@ -1,3 +1,4 @@
+import AllToolsSection from './components/AllToolsSection'
 import CodeSampleSection from './components/CodeSampleSection'
 import HeroSection from './components/HeroSection'
 import HistorySection from './components/HistorySection'
@@ -11,6 +12,7 @@ const Home = (): ReactElement => {
       <CodeSampleSection />
       <ToolsSection />
       <HistorySection />
+      <AllToolsSection />
     </>
   )
 }
