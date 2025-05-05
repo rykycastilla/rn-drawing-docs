@@ -1,5 +1,6 @@
 import CloseButton from './components/CloseButton'
 import GitHubButton from './components/GitHubButton'
+import LanguageToggle from './components/LanguageToggle'
 import MenuButton from './components/MenuButton'
 import Panel from './components/Panel'
 import ThemeButton from './components/ThemeButton'
@@ -22,6 +23,7 @@ const MobileMenu = (): ReactElement => {
         <CloseButton close={ close } />
         <div className="grid grid-cols-1 gap-4">
           <GitHubButton repoOwner={ REPO_OWNER } repoName={ REPO_NAME } close={ close } />
+          <LanguageToggle close={ close } />
           <ThemeButton close={ close } />
         </div>
       </Panel>

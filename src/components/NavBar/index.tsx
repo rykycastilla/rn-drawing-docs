@@ -1,5 +1,6 @@
 import GitHubButton from './components/GitHubButton'
 import HomeLink from './components/HomeLink'
+import LanguageToggle from './components/LanguageToggle'
 import MobileMenu from '@/components/MobileMenu'
 import ThemeToggle from './components/ThemeToggle'
 import { ReactElement } from 'react'
@@ -15,6 +16,7 @@ const NavBar = (): ReactElement => {
         <div className="flex items-center gap-3">
           <div className="hidden md:flex items-center gap-3">
             <GitHubButton repoName={ REPO_NAME } repoOwner={ REPO_OWNER } />
+            <LanguageToggle />
             <ThemeToggle />
           </div>
           <MobileMenu />
