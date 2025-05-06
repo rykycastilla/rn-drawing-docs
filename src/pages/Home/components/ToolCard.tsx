@@ -1,15 +1,14 @@
 import { ReactElement } from 'react'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/libs/ui/tooltip'
+import { Tooltip, TooltipProvider, TooltipTrigger } from '@/libs/ui/tooltip'
 import type { LucideIcon } from 'lucide-react'
 
 interface ToolCardProps {
   icon: LucideIcon
   name: string
-  description: string
 }
 
 const ToolCard = ( props:ToolCardProps ): ReactElement => {
-  const { icon:Icon, name, description } = props
+  const { icon:Icon, name } = props
   return (
     <div className="bg-white dark:bg-card rounded-xl p-6 shadow-md hover:shadow-lg transition-all hover:border-pink-200/50 dark:hover:border-pink-800/50 border-2 border-transparent hover:scale-105">
       <TooltipProvider>
@@ -22,9 +21,6 @@ const ToolCard = ( props:ToolCardProps ): ReactElement => {
               <h3 className="font-medium text-lg">{ name }</h3>
             </div>
           </TooltipTrigger>
-          <TooltipContent>
-            <p>{ description }</p>
-          </TooltipContent>
         </Tooltip>
       </TooltipProvider>
     </div>

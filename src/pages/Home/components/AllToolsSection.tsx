@@ -13,24 +13,28 @@ const AllToolsSection = (): ReactElement => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           <ToolCard
             icon={ ZoomIn }
-            name={ t( 'zoom' ) }
-            description="Acerca o aleja el lienzo para trabajar en detalles" />
-          <ToolCard icon={ Pipette } name={ t( 'eye-dropper' ) } description="Captura cualquier color del lienzo" />
+            name={ t( 'zoom' ) } />
+          <ToolCard
+            icon={ Pipette }
+            name={ t( 'eye-dropper' ) } />
           <ToolCard
             icon={ SprayCanIcon }
-            name={ t( 'spray' ) }
-            description="Crea efectos de aerosol con partículas personalizables" />
-          <ToolCard icon={ Pen } name={ t( 'pen' ) } description="Trazos fluidos con presión variable" />
+            name={ t( 'spray' ) } />
+          <ToolCard
+            icon={ Pen }
+            name={ t( 'pen' ) } />
           <ToolCard
             icon={ TapeIcon as unknown as LucideIcon }
-            name={ t( 'tape' ) }
-            description="Crea líneas rectas y formas con cinta adhesiva" />
-          <ToolCard icon={ Pencil } name={ t( 'pencil' ) } description="Trazo natural con textura de lápiz" />
-          <ToolCard icon={ Eraser } name={ t( 'eraser' ) } description="Borra con precisión y control total" />
+            name={ t( 'tape' ) } />
+          <ToolCard
+            icon={ Pencil }
+            name={ t( 'pencil' ) } />
+          <ToolCard
+            icon={ Eraser }
+            name={ t( 'eraser' ) } />
           <ToolCard
             icon={ PaintBucket }
-            name={ t( 'tape' ) }
-            description="Rellena áreas con color de forma inteligente" />
+            name={ t( 'tape' ) } />
         </div>
       </div>
     </section>
