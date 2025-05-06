@@ -2,6 +2,7 @@ import { Lang } from './Lang'
 import { LanguageContext } from './context'
 import { ReactElement, useCallback, useMemo } from 'react'
 import { UnexpectedDefaultLanguageError } from './UnexpectedDefaultLanguageError'
+import { useDocLanguage } from './doc_language'
 import { useStorageState } from '@/libs/ui/hooks/storage_state'
 import { useTemplateTranslation } from './template_translation'
 
@@ -51,6 +52,7 @@ const LanguageProvider = <T extends Lang>( props:LanguageProviderProps<T> ): Rea
     return [ code, lang ]
   }, [ languageConfig, getSystemLanguage, chooseLanguage ] )
 
+  useDocLanguage( code )
   const t = useTemplateTranslation( lang )
 
   return (
