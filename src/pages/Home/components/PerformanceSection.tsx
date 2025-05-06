@@ -14,8 +14,7 @@ const PerformanceSection = (): ReactElement => {
         <p className="text-center text-sm md:text-base text-gray-600 dark:text-gray-300 mb-4 md:mb-10 max-w-2xl mx-auto">
           { t( 'performance-subtitle' ) }
           <FootNote>
-            Metricas obtenidas en un Galaxy A20 (SM-A205G).
-            El rendimiento final depende del dispositivo que ejecute la app.
+            { t( 'performance-disclaimer' ) }
           </FootNote>
         </p>
         <div className="max-w-3xl mx-auto h-[350px] md:h-[400px]">

@@ -29,5 +29,18 @@
   "page-not-found-title": "Página no encontrada",
   "page-not-found-alert": "¡Ups! Página no encontrada",
   "page-not-found": "Parece que has intentado dibujar fuera del lienzo. La página que buscas no existe o ha sido movida.",
-  "come-home": "Volver al inicio"
+  "come-home": "Volver al inicio",
+  "language": "Idioma $1",
+  "change-language": "Cambiar Idioma",
+  "language-es": "Español",
+  "language-en": "Inglés",
+  "language-system": "Sistema",
+  "theme": "Tema $1",
+  "change-theme": "Cambiar Tema",
+  "theme-light": "Claro",
+  "theme-dark": "Oscuro",
+  "theme-system": "Sistema",
+  "history-memory-usage-disclaimer": "Los límites de la cantidad de snapshots (versiones) del historial son establecidos en base a la memoria total del dispositivo.",
+  "performance-disclaimer": "Métricas obtenidas en un Galaxy A20 (SM-A205G). El rendimiento final depende del dispositivo que ejecute la app.",
+  "copyright-statement": "Todos los derechos reservados"
 }

@@ -11,8 +11,7 @@ const HistorySection = (): ReactElement => {
         <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           { t( 'history-description' ) }
           <FootNote>
-            Los limites de la cantidad de snapshots (versiones) del historial son establecidos en base a
-            la memoria total del dispositivo.
+            { t( 'history-memory-usage-disclaimer' ) }
           </FootNote>.
         </p>
       </div>

@@ -9,19 +9,19 @@ interface LanguageToggleProps {
 const LanguageToggle = ( props:LanguageToggleProps ): ReactElement => {
 
   const { close } = props
-  const { languageConfig, language, setLanguage } = useLanguage()
+  const { t, languageConfig, language, setLanguage } = useLanguage()
 
   // Get language name
   const getLanguageName = () => {
     switch ( languageConfig ) {
     case 'es':
-      return 'Español'
+      return t( 'language-es' )
     case 'en':
-      return 'English'
+      return t( 'language-en' )
     case 'system':
-      return 'Sistema'
+      return t( 'language-system' )
     default:
-      return 'Español'
+      return language
     }
   }
 
@@ -36,24 +36,24 @@ const LanguageToggle = ( props:LanguageToggleProps ): ReactElement => {
         <DropdownMenuTrigger asChild>
           <button className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 w-full text-left">
             <div className="flex items-center justify-center w-5 h-5 font-medium">{ language.toUpperCase() }</div>
-            <span className="font-medium">Idioma ( { getLanguageName() } )</span>
+            <span className="font-medium">{ t( 'language', `(${ getLanguageName() })` ) }</span>
           </button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="start" className="w-[150px]">
           <DropdownMenuItem
             onClick={ () => changeLanguage( 'es' ) }
             className="flex items-center gap-2">
-            <span>Español</span>
+            <span>{ t( 'language-es' ) }</span>
           </DropdownMenuItem>
           <DropdownMenuItem
             onClick={ () => changeLanguage( 'en' ) }
             className="flex items-center gap-2">
-            <span>English</span>
+            <span>{ t( 'language-en' ) }</span>
           </DropdownMenuItem>
           <DropdownMenuItem
             onClick={ () => changeLanguage( 'system' ) }
             className="flex items-center gap-2">
-            <span>Sistema</span>
+            <span>{ t( 'language-system' ) }</span>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

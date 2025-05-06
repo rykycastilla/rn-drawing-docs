@@ -29,5 +29,18 @@
   "page-not-found-title": "Page not found",
   "page-not-found-alert": "Oops! Page not found",
   "page-not-found": "It looks like you tried to draw outside the canvas. The page you're looking for doesn't exist or has been moved.",
-  "come-home": "Go back home"
+  "come-home": "Go back home",
+  "language": "Language $1",
+  "change-language": "Change Language",
+  "language-es": "Spanish",
+  "language-en": "English",
+  "language-system": "System",
+  "theme": "Theme $1",
+  "change-theme": "Change Theme",
+  "theme-light": "Light",
+  "theme-dark": "Dark",
+  "theme-system": "System",
+  "history-memory-usage-disclaimer": "The limits on the number of snapshots (versions) in history are set based on the device's total memory.",
+  "performance-disclaimer": "Metrics obtained on a Galaxy A20 (SM-A205G). Final performance depends on the device running the app.",
+  "copyright-statement": "All rights reserved"
 }

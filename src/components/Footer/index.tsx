@@ -3,12 +3,14 @@ import Link from './components/Link'
 import { REPO_NAME, REPO_OWNER } from '@/constants'
 import { ReactElement } from 'react'
 import { useFootNote } from '@/hooks/foot_note'
+import { useLanguage } from '@/hooks/language'
 
 const Footer = (): ReactElement => {
   const date = new Date()
   const year: number = date.getFullYear()
   const footNoteList = useFootNote()
   const thereIsFootNotes: boolean = footNoteList.length > 0
+  const { t } = useLanguage()
   return (
     <footer>
       { thereIsFootNotes && <Legend footNoteList={ footNoteList } /> }
@@ -16,7 +18,7 @@ const Footer = (): ReactElement => {
         <div className="container flex flex-col-reverse md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <div>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              © { year } RN Drawing. Todos los derechos reservados.
+              © { year } RN Drawing. { t( 'copyright-statement' ) }.
             </p>
           </div>
           <div className="flex gap-6 mb-4 md:mb-0">

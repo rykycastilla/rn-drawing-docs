@@ -5,7 +5,7 @@ import { useLanguage } from '@/hooks/language'
 
 const LanguageToggle = (): ReactElement => {
 
-  const { language, setLanguage } = useLanguage()
+  const { t, language, setLanguage } = useLanguage()
   const [ mounted, setMounted ] = useState( false )
 
   // Ensure component is mounted to avoid hydration mismatch
@@ -16,8 +16,8 @@ const LanguageToggle = (): ReactElement => {
   if ( !mounted ) {
     return (
       <Button variant="outline" size="icon">
-        <span className="font-medium">EN</span>
-        <span className="sr-only">Cambiar idioma</span>
+        <span className="font-medium">{ language.toUpperCase() }</span>
+        <span className="sr-only">{ t( 'change-language' ) }</span>
       </Button>
     )
   }
@@ -27,24 +27,24 @@ const LanguageToggle = (): ReactElement => {
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon" className="bg-background w-10">
           <span className="font-medium">{ language.toUpperCase() }</span>
-          <span className="sr-only">Cambiar idioma</span>
+          <span className="sr-only">{ t( 'change-language' ) }</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" onClick={ ( event ) => event.stopPropagation() }>
         <DropdownMenuItem
           onClick={ () => setLanguage( 'es' ) }
           className={ ( language === 'es' ) ? 'bg-muted' : '' }>
-          Español
+          { t( 'language-es' ) }
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={ () => setLanguage( 'en' ) }
           className={ ( language === 'en' ) ? 'bg-muted' : '' }>
-          English
+          { t( 'language-en' ) }
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={ () => setLanguage( 'system' ) }
           className={ ( language === 'system' ) ? 'bg-muted' : '' }>
-          Sistema
+          { t( 'language-system' ) }
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
