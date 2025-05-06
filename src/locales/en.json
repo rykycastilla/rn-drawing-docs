@@ -25,5 +25,9 @@
   "stroking": "Stroking",
   "auto-save": "Auto Save",
   "filling": "Filling",
-  "animated-filling": "Animated Filling"
+  "animated-filling": "Animated Filling",
+  "page-not-found-title": "Page not found",
+  "page-not-found-alert": "Oops! Page not found",
+  "page-not-found": "It looks like you tried to draw outside the canvas. The page you're looking for doesn't exist or has been moved.",
+  "come-home": "Go back home"
 }
