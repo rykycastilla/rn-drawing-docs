@@ -1,26 +1,12 @@
 import { Button } from '@/libs/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/libs/ui/dropdown-menu'
 import { ReactElement, useState, useEffect } from 'react'
+import { useLanguage } from '@/hooks/language'
 
 const LanguageToggle = (): ReactElement => {
 
-  const [ language, setLanguage ] = useState<'es'|'en'|'system'>( 'system' )
+  const { language, setLanguage } = useLanguage()
   const [ mounted, setMounted ] = useState( false )
-
-  // Detect system language
-  const getSystemLanguage = (): 'es' | 'en' => {
-    if ( navigator === undefined ) { return 'en' }
-    const browserLang = navigator.language ?? ''
-    return browserLang.toLowerCase().startsWith( 'es' ) ? 'es' : 'en'
-  }
-
-  // Gets the current language
-  const getCurrentLanguage = (): 'ES' | 'EN' => {
-    if( language === 'system' ) {
-      return ( getSystemLanguage() === 'es' ) ? 'ES' : 'EN'
-    }
-    return ( language === 'es' ) ? 'ES' : 'EN'
-  }
 
   // Ensure component is mounted to avoid hydration mismatch
   useEffect( () => {
@@ -40,7 +26,7 @@ const LanguageToggle = (): ReactElement => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon" className="bg-background w-10">
-          <span className="font-medium">{ getCurrentLanguage() }</span>
+          <span className="font-medium">{ language.toUpperCase() }</span>
           <span className="sr-only">Cambiar idioma</span>
         </Button>
       </DropdownMenuTrigger>

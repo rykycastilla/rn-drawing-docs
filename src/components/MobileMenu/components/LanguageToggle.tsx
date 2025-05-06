@@ -1,5 +1,6 @@
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/libs/ui/dropdown-menu'
-import { ReactElement, useCallback, useState } from 'react'
+import { ReactElement, useCallback } from 'react'
+import { useLanguage } from '@/hooks/language'
 
 interface LanguageToggleProps {
   close(): void
@@ -8,26 +9,11 @@ interface LanguageToggleProps {
 const LanguageToggle = ( props:LanguageToggleProps ): ReactElement => {
 
   const { close } = props
-  const [ language, setLanguage ] = useState<'es'|'en'|'system'>( 'system' )
-
-  // Detect system language
-  const getSystemLanguage = (): 'es' | 'en' => {
-    if ( navigator === undefined ) { return 'en' }
-    const browserLang = navigator.language ?? ''
-    return browserLang.toLowerCase().startsWith( 'es' ) ? 'es' : 'en'
-  }
-
-  // Gets the current language
-  const getCurrentLanguage = (): 'ES' | 'EN' => {
-    if( language === 'system' ) {
-      return ( getSystemLanguage() === 'es' ) ? 'ES' : 'EN'
-    }
-    return ( language === 'es' ) ? 'ES' : 'EN'
-  }
+  const { languageConfig, language, setLanguage } = useLanguage()
 
   // Get language name
   const getLanguageName = () => {
-    switch ( language ) {
+    switch ( languageConfig ) {
     case 'es':
       return 'Español'
     case 'en':
@@ -42,14 +28,14 @@ const LanguageToggle = ( props:LanguageToggleProps ): ReactElement => {
   const changeLanguage = useCallback( ( language:( 'es'|'en'|'system' ) ) => {
     setLanguage( language )
     close()
-  }, [ close ] )
+  }, [ setLanguage, close ] )
 
   return (
     <div className="relative">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <button className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 w-full text-left">
-            <div className="flex items-center justify-center w-5 h-5 font-medium">{getCurrentLanguage()}</div>
+            <div className="flex items-center justify-center w-5 h-5 font-medium">{ language.toUpperCase() }</div>
             <span className="font-medium">Idioma ( { getLanguageName() } )</span>
           </button>
         </DropdownMenuTrigger>
