@@ -1,11 +1,13 @@
 import Code from '@/components/Code'
 import { ReactElement } from 'react'
+import { useLanguage } from '@/hooks/language'
 
 const CodeSampleSection = (): ReactElement => {
+  const { t } = useLanguage()
   return (
     <section className="py-20 bg-gray-50 dark:bg-secondary">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-10">Dibujar en React Native nunca ha sido tan fácil</h2>
+        <h2 className="text-3xl font-bold text-center mb-10">{ t( 'code-sample-title' ) }</h2>
         <div className="max-w-3xl mx-auto">
           <Code
             language="tsx"

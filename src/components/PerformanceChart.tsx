@@ -1,6 +1,7 @@
 import { Bar } from 'react-chartjs-2'
 import { BarElement, Chart as ChartJS, CategoryScale, Legend, LinearScale, Title, Tooltip } from 'chart.js'
 import { ReactElement, useEffect, useState } from 'react'
+import { useLanguage } from '@/hooks/language'
 import { useTheme } from '@/libs/ui/hooks/theme'
 
 ChartJS.register( CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend )
@@ -40,6 +41,7 @@ const PerformanceChart = ( props:PerformanceChartProps ): ReactElement => {
   const { resolvedTheme } = useTheme()
   const isDark = resolvedTheme === 'dark'
   const { labels, labelsData } = useData( data )
+  const { t } = useLanguage()
 
   const structuredData = {
     labels,
@@ -71,7 +73,7 @@ const PerformanceChart = ( props:PerformanceChartProps ): ReactElement => {
       },
       title: {
         display: true,
-        text: 'Rendimiento en FPS por escenario',
+        text: t( 'performance-show' ),
         color: isDark ? '#fff' : '#000',
         font: {
           size: window.innerWidth < 768 ? 14 : 16,
