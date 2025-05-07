@@ -1,3 +1,4 @@
+import Docs from '@/pages/Docs'
 import Home from '@/pages/Home'
 import HomeLayout from '@/pages/HomeLayout'
 import NotFound from '@/pages/NotFound'
@@ -11,6 +12,7 @@ const App = (): ReactElement | null => {
       <Routes>
         <Route path="/" element={ <HomeLayout /> }>
           <Route path="/" element={ <Home /> } />
+          <Route path="/docs" element={ <Docs /> } />
           <Route path="*" element={ <NotFound /> } />
         </Route>
       </Routes>
