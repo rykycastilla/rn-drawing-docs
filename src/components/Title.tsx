@@ -1,15 +1,20 @@
-import { useEffect } from 'react'
+import { ReactNode, useEffect } from 'react'
 
 const { title } = document
 
+function processTitle( title:ReactNode ): string {
+  if( title instanceof Array ) { return title.join( '' ) }
+  return String( title )
+}
+
 interface TitleProps {
-  children: string
+  children: ReactNode
 }
 
 const Title = ( props:TitleProps ): null => {
   const { children } = props
   useEffect( () => {
-    document.title = children
+    document.title = processTitle( children )
     return () => { document.title = title }
   }, [ children ] )
   return null

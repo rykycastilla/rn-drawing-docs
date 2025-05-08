@@ -6,6 +6,7 @@ import Title from './Title'
 import Warning from './Warning'
 import { CodeComponent, Component, PageStructure, TextComponent } from '../models'
 import { ReactElement, useMemo } from 'react'
+import { useLanguage } from '@/hooks/language'
 
 function isCodeComp( comp:Component ): comp is CodeComponent {
   return comp.type === 'code'
@@ -36,23 +37,25 @@ function compareTextComp( component:Component, type:TextComponent[ 'type' ] ): c
   return component.type === type
 }
 
+type Translation = ( target:string ) => string
+
 /**
  * Manages optional rendering of possible text components
  */
-function renderTextComp( comp:Component, renderedContent:ReactElement[] ) {
+function renderTextComp( comp:Component, renderedContent:ReactElement[], t:Translation ) {
   let rendered: ReactElement | undefined
   const key: number = renderedContent.length
   if( compareTextComp( comp, 'subtitle' ) ) {
-    rendered = <Subtitle key={ key }>{ comp.text }</Subtitle>
+    rendered = <Subtitle key={ key }>{ t( comp.text ) }</Subtitle>
   }
   else if( compareTextComp( comp, 'info' ) ) {
-    rendered = <Info key={ key }>{ comp.text }</Info>
+    rendered = <Info key={ key }>{ t( comp.text ) }</Info>
   }
   else if( compareTextComp( comp, 'warning' ) ) {
-    rendered = <Warning key={ key }>{ comp.text }</Warning>
+    rendered = <Warning key={ key }>{ t( comp.text ) }</Warning>
   }
   else if( compareTextComp( comp, 'p' ) ) {
-    rendered = <Paragraph key={ key }>{ comp.text }</Paragraph>
+    rendered = <Paragraph key={ key }>{ t( comp.text ) }</Paragraph>
   }
   if( rendered !== undefined ) { renderedContent.push( rendered ) }
 }
@@ -65,6 +68,7 @@ const Content = ( props:ContentProps ): ReactElement => {
 
   const { children } = props
   const { title, content } = children
+  const { t } = useLanguage()
 
   // Rendering page content based on the data structure provided
   const renderedContent = useMemo( () => {
@@ -72,14 +76,14 @@ const Content = ( props:ContentProps ): ReactElement => {
     for( let i = 0; i < content.length; i++ ) {
       const comp: Component = content[ i ]!
       renderCodeComp( comp, renderedContent )
-      renderTextComp( comp, renderedContent )
+      renderTextComp( comp, renderedContent, t )
     }
     return renderedContent
-  }, [ content ] )
+  }, [ content, t ] )
 
   return (
     <>
-      <Title>{ title }</Title>
+      <Title>{ t( title ) }</Title>
       { renderedContent }
     </>
   )

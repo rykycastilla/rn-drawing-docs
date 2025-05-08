@@ -42,5 +42,8 @@
   "theme-system": "System",
   "history-memory-usage-disclaimer": "The limits on the number of snapshots (versions) in history are set based on the device's total memory.",
   "performance-disclaimer": "Metrics obtained on a Galaxy A20 (SM-A205G). Final performance depends on the device running the app.",
-  "copyright-statement": "All rights reserved"
+  "copyright-statement": "All rights reserved",
+  "docs-installing-title": "Installation",
+  "docs-installing-how-to-use": "To use `rect-native-drawing` in your Expo project [This library has been tested on Expo SDK 51 and 52], you must install it using the following commands:",
+  "docs-installing-installation-importance": "This ensures the installation of the library and its dependencies for the version of Expo you are using."
 }

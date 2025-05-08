@@ -3,12 +3,14 @@ import NotFound from '@/pages/NotFound'
 import Title from '@/components/Title'
 import { data } from './data'
 import { ReactElement, useEffect, useMemo } from 'react'
+import { useLanguage } from '@/hooks/language'
 import { useNavigate, useParams } from 'react-router-dom'
 
 const Docs = (): ReactElement | null => {
 
   const { topic } = useParams()
   const navigate = useNavigate()
+  const { t } = useLanguage()
 
   // Redirecting to first doc page by default
   useEffect( () => {
@@ -36,7 +38,7 @@ const Docs = (): ReactElement | null => {
 
   return (
     <>
-      <Title>{ page.title }</Title>
+      <Title>{ t( page.title ) } | Drawing Docs </Title>
       <Content>{ page }</Content>
     </>
   )
