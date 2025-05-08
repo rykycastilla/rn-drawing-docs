@@ -12,7 +12,7 @@ const App = (): ReactElement | null => {
       <Routes>
         <Route path="/" element={ <HomeLayout /> }>
           <Route path="/" element={ <Home /> } />
-          <Route path="/docs" element={ <Docs /> } />
+          <Route path="/docs/:topic?" element={ <Docs /> } />
           <Route path="*" element={ <NotFound /> } />
         </Route>
       </Routes>

@@ -1,0 +1,15 @@
+{
+  "target": "installing",
+  "title": "Instalación",
+  "content": [
+      { "type": "p", "text": "Para utilizar `rect-native-drawing` en tu proyecto **Expo** [Esta librería ha sido testeado en Expo SDK 51 y 52] debes instalarlo usando los siguientes comandos: " },
+      { 
+          "type": "code", 
+          "code": "npx expo install react-native-webview\nnpx expo install react-native-drawing", 
+          "language": "bash", 
+          "fileName": "Shell", 
+          "maximizable": false 
+      },
+      { "type": "p", "text": "Esto asegura la instalación de la librería y sus dependencias para la versión de expo que estás utilizando." }
+  ]
+}
