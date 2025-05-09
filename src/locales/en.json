@@ -45,5 +45,17 @@
   "copyright-statement": "All rights reserved",
   "docs-installing-title": "Installation",
   "docs-installing-how-to-use": "To use `rect-native-drawing` in your Expo project [This library has been tested on Expo SDK 51 and 52], you must install it using the following commands:",
-  "docs-installing-installation-importance": "This ensures the installation of the library and its dependencies for the version of Expo you are using."
+  "docs-installing-installation-importance": "This ensures the installation of the library and its dependencies for the version of Expo you are using.",
+  "docs-getting-started-title": "Getting Started",
+  "docs-getting-started-import-instruction": "To use the drawing canvas in your project you need to import the Draw component",
+  "docs-getting-started-required-props-heading": "Required Props",
+  "docs-getting-started-required-props-description": "The drawing canvas requires some props to work properly: **resolution**, **color** and **tool**.",
+  "docs-getting-started-resolution-heading": "Resolution",
+  "docs-getting-started-resolution-description": "Represents the number of horizontal pixels[Default aspect ratio will be 1:1 (square)] that the image will contain. Increasing this value improves image quality and resource requirements.",
+  "docs-getting-started-color-heading": "Color",
+  "docs-getting-started-color-description": "Defines the value with which drawing will be performed.",
+  "docs-getting-started-tool-heading": "Tool",
+  "docs-getting-started-tool-description": "Current tool that will identify the type of stroke.",
+  "docs-getting-started-load-event-heading": "Load Event",
+  "docs-getting-started-load-event-description": "Another important concept is the **Load** event, which will be triggered when the drawing canvas is ready to render images, and therefore, drawing can begin.\nThe **onLoad** callback receives a `LoadEvent` object, whose `target` property is the reference to the drawing canvas that generated the event."
 }
