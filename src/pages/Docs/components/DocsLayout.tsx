@@ -1,3 +1,4 @@
+import Pager, { PagerNav } from './Pager'
 import { ReactElement } from 'react'
 
 interface DocsLayoutProps {
@@ -12,6 +13,11 @@ const DocsLayout = ( props:DocsLayoutProps ): ReactElement => {
         <div className="flex-1">
           <div className="prose prose-pink dark:prose-invert max-w-none">
             { children }
+            <div className="flex justify-between items-center mt-16 pt-8 border-t border-gray-200 dark:border-gray-800">
+              <Pager to={ PagerNav.PREVIOUS } />
+              <div />
+              <Pager to={ PagerNav.NEXT } />
+            </div>
           </div>
         </div>
       </div>
