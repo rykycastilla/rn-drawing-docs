@@ -1,4 +1,5 @@
 import Content from './components/Content'
+import DocsLayout from './components/DocsLayout'
 import NotFound from '@/pages/NotFound'
 import Title from '@/components/Title'
 import { data } from './data'
@@ -37,10 +38,10 @@ const Docs = (): ReactElement | null => {
   }
 
   return (
-    <>
+    <DocsLayout>
       <Title>{ t( page.title ) } | Drawing Docs </Title>
       <Content>{ page }</Content>
-    </>
+    </DocsLayout>
   )
 
 }
