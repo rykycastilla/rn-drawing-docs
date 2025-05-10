@@ -1,0 +1,42 @@
+{
+  "target": "dot-tools",
+  "title": "docs-dot-tools-title",
+  "content": [
+    {
+      "type": "info",
+      "text": "docs-dot-tools-info-usage"
+    },
+    {
+      "type": "subtitle",
+      "text": "docs-dot-tools-subtitle-dot-pen"
+    },
+    {
+      "type": "p",
+      "text": "docs-dot-tools-description-dot-pen"
+    },
+    {
+      "type": "code",
+      "code": "import { Draw, Tool } from 'react-native-drawing'\nimport { ReactElement } from 'react'\n\nconst App = (): ReactElement => {\n  return (\n    <Draw\n      resolution={ 720 }\n      color=\"blue\"\n      tool={ Tool.DOT_PEN } />\n  )\n}\n\nexport default App",
+      "language": "tsx",
+      "fileName": "App.tsx",
+      "maximizable": true,
+      "_preview": true
+    },
+    {
+      "type": "subtitle",
+      "text": "docs-dot-tools-subtitle-square-dot-pen"
+    },
+    {
+      "type": "p",
+      "text": "docs-dot-tools-description-square-dot-pen"
+    },
+    {
+      "type": "code",
+      "code": "import { Draw, Tool } from 'react-native-drawing'\nimport { ReactElement } from 'react'\n\nconst App = (): ReactElement => {\n  return (\n    <Draw\n      resolution={ 720 }\n      color=\"orange\"\n      tool={ Tool.SQUARE_DOT_PEN } />\n  )\n}\n\nexport default App",
+      "language": "tsx",
+      "fileName": "App.tsx",
+      "maximizable": true,
+      "_preview": true
+    }
+  ]
+}

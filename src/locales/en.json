@@ -81,5 +81,11 @@
   "docs-stroke-tools-eraser-warning": "The color code is ignored when the eraser is in use.",
   "docs-stroke-tools-tape-description": "The adhesive tape `Tool.TAPE` has an irregular stroke, showing angled cuts when changing direction; it supports transparency and has straight edges (creating a rectangular-shaped stroke).",
   "docs-stroke-tools-tool-size": "Tool Size",
-  "docs-stroke-tools-toolsize-description": "It is specified by the *prop* **toolSize** (default is 4 pixels). Its purpose is to assign a customizable size to the stroke of the tool being used."
+  "docs-stroke-tools-toolsize-description": "It is specified by the *prop* **toolSize** (default is 4 pixels). Its purpose is to assign a customizable size to the stroke of the tool being used.",
+  "docs-dot-tools-title": "Dot Tools",
+  "docs-dot-tools-info-usage": "To use a tool you must import the Tool enum and pass it to the Draw component's tool prop.",
+  "docs-dot-tools-subtitle-dot-pen": "Dot Pen",
+  "docs-dot-tools-description-dot-pen": "`Tool.DOT_PEN` allows creating dots in specific locations with customizable size and color.",
+  "docs-dot-tools-subtitle-square-dot-pen": "Square Dot Pen",
+  "docs-dot-tools-description-square-dot-pen": "`Tool.SQUARE_DOT_PEN` has the same features as the regular Dot Pen, except it creates square-shaped dots."
 }

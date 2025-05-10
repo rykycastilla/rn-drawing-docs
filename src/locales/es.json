@@ -81,5 +81,11 @@
   "docs-stroke-tools-eraser-warning": "El código de color es ignorado cuando el borrador está en uso",
   "docs-stroke-tools-tape-description": "La cinta adhesiva `Tool.TAPE` tiene un trazo irregular, presentando cortes en ángulo cuando varía la dirección; admite transparencias y sus bordes son rectos (creando un trazo con forma rectangular).",
   "docs-stroke-tools-tool-size": "Tamaño del trazo",
-  "docs-stroke-tools-toolsize-description": "Es especificado por la *prop* **toolSize** (por defecto es 4 pixeles). Su misión es asignarle un tamaño personalizable al trazo de la herramienta que se está usando."
+  "docs-stroke-tools-toolsize-description": "Es especificado por la *prop* **toolSize** (por defecto es 4 pixeles). Su misión es asignarle un tamaño personalizable al trazo de la herramienta que se está usando.",
+  "docs-dot-tools-title": "Herramientas de puntos",
+  "docs-dot-tools-info-usage": "Para utilizar una herramienta se debe importar el enum Tool y enviárselo a la prop tool del componente Draw.",
+  "docs-dot-tools-subtitle-dot-pen": "Bolígrafo de Puntos",
+  "docs-dot-tools-description-dot-pen": "`Tool.DOT_PEN` permite crear puntos en lugares específicos con tamaño y color personalizables.",
+  "docs-dot-tools-subtitle-square-dot-pen": "Bolígrafo de Puntos (Cuadrados)",
+  "docs-dot-tools-description-square-dot-pen": "`Tool.SQUARE_DOT_PEN` posee las mismas características que el Bolígrafo de Puntos (regular), excepto que los de este tienen forma cuadrada."
 }
