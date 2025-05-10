@@ -57,5 +57,15 @@
   "docs-getting-started-tool-heading": "Tool",
   "docs-getting-started-tool-description": "Current tool that will identify the type of stroke.",
   "docs-getting-started-load-event-heading": "Load Event",
-  "docs-getting-started-load-event-description": "Another important concept is the **Load** event, which will be triggered when the drawing canvas is ready to render images, and therefore, drawing can begin.\nThe **onLoad** callback receives a `LoadEvent` object, whose `target` property is the reference to the drawing canvas that generated the event."
+  "docs-getting-started-load-event-description": "Another important concept is the **Load** event, which will be triggered when the drawing canvas is ready to render images, and therefore, drawing can begin.\nThe **onLoad** callback receives a `LoadEvent` object, whose `target` property is the reference to the drawing canvas that generated the event.",
+  "docs-image-layout-title": "Image and Layout",
+  "docs-image-layout-resolution": "Resolution",
+  "docs-image-layout-resolution-description": "The **resolution** prop represents the number of horizontal pixels in the drawing area. If changed, existing content will be scaled and new strokes will adopt the new definition.",
+  "docs-image-layout-dimensions": "Dimensions",
+  "docs-image-layout-dimensions-description": "The drawing view dimensions are defined by the **width** prop, which accepts any valid React Native style value. To modify the dimensions, only **width** needs to be specified, as the aspect ratio will determine the height.",
+  "docs-image-layout-aspect-ratio": "Aspect Ratio",
+  "docs-image-layout-aspect-ratio-description": "The aspect ratio is set by the optional **aspectRatio** prop. Its default value is 1 (square). The recommended way to define the aspect ratio is using a `width / height` fraction. Changing the aspect ratio may crop the lower content or expand the drawing area to fit the new value.",
+  "docs-image-layout-warning": "It is not recommended to modify these props (resolution, width, aspectRatio) during drawing, as they are designed to remain fixed. Changes may cause visual inconsistencies.",
+  "docs-image-layout-image-quality": "Image Quality",
+  "docs-image-layout-image-quality-description": "Drawing at a low resolution may show antialiasing effects. To disable this smoothing (showing natural pixelation instead), set the **antialiasing** prop to `false`."
 }
