@@ -67,5 +67,19 @@
   "docs-image-layout-aspect-ratio-description": "El ratio de aspecto se establece con la *prop* opcional **aspectRatio**. Su valor por defecto es 1 (Pantalla cuadrada). La forma recomendada de indicar el *aspect ratio* es mediante una fracción `width / height`. Al ser modificado el ratio de aspecto, puede recortarse el contenido inferior o expandirse con una mayor área de dibujo, ambas con el objetivo de ajustarse al nuevo valor.",
   "docs-image-layout-warning": "No es recomendable modificar estas props (resolution, width y aspectRatio), ya que han sido pensadas para mantener un valor fijo y su alteración durante el dibujo puede provocar inconsistencias en la imagen",
   "docs-image-layout-image-quality": "Calidad de imagen",
-  "docs-image-layout-image-quality-description": "Al dibujar con una resolución muy baja pueden notarse efectos de suavizado, esto es producto del antialiasing. Si se desea, este efecto puede ser desactivado (mostrando la pixelación natural en su lugar) estableciendo la *prop* **antialiasing** a `false`."
+  "docs-image-layout-image-quality-description": "Al dibujar con una resolución muy baja pueden notarse efectos de suavizado, esto es producto del antialiasing. Si se desea, este efecto puede ser desactivado (mostrando la pixelación natural en su lugar) estableciendo la *prop* **antialiasing** a `false`.",
+  "docs-grid-title": "Grilla",
+  "docs-grid-description": "Es posible establecer una grilla utilizando la *prop* **grid**. Esta puede recibir un único valor, el cual representará la cantidad de celdas en las que se dividirá el espacio visible en horizontal y vertical, o puede recibir una tupla `[ number, number ]`, en la que el primer numero representará la cantidad de celdas horizontales y el segundo la cantidad de celdas verticales.",
+  "docs-grid-example-square": "Ejemplo de grilla cuadrada (3x3)",
+  "docs-grid-example-rectangle": "Ejemplo de grilla (4x5)",
+  "docs-stroke-tools-intro": "Las herramientas de trazo permiten crear líneas.",
+  "docs-stroke-tools-usage-info": "Para utilizar una herramienta se debe importar el enum Tool y enviárselo a la prop tool del componente Draw.",
+  "docs-stroke-tools-title": "Herramientas de Trazo",
+  "docs-stroke-tools-pencil-description": "El lápiz se emplea a través del valor `Tool.PENCIL`. Esta herramienta puede realizar trazos continuos, redondeados en los bordes y sin transparencias.",
+  "docs-stroke-tools-pencil-warning": "En caso de que el código de color posea un canal alpha, será ignorado para esta herramienta",
+  "docs-stroke-tools-eraser-description": "El borrador elimina el dibujo por donde pasa, conservando un \"trazo\" con cualidades similares al lápiz. Su valor es `Tool.ERASER`.",
+  "docs-stroke-tools-eraser-warning": "El código de color es ignorado cuando el borrador está en uso",
+  "docs-stroke-tools-tape-description": "La cinta adhesiva `Tool.TAPE` tiene un trazo irregular, presentando cortes en ángulo cuando varía la dirección; admite transparencias y sus bordes son rectos (creando un trazo con forma rectangular).",
+  "docs-stroke-tools-tool-size": "Tamaño del trazo",
+  "docs-stroke-tools-toolsize-description": "Es especificado por la *prop* **toolSize** (por defecto es 4 pixeles). Su misión es asignarle un tamaño personalizable al trazo de la herramienta que se está usando."
 }

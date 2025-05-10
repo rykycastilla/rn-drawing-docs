@@ -67,5 +67,19 @@
   "docs-image-layout-aspect-ratio-description": "The aspect ratio is set by the optional **aspectRatio** prop. Its default value is 1 (square). The recommended way to define the aspect ratio is using a `width / height` fraction. Changing the aspect ratio may crop the lower content or expand the drawing area to fit the new value.",
   "docs-image-layout-warning": "It is not recommended to modify these props (resolution, width, aspectRatio) during drawing, as they are designed to remain fixed. Changes may cause visual inconsistencies.",
   "docs-image-layout-image-quality": "Image Quality",
-  "docs-image-layout-image-quality-description": "Drawing at a low resolution may show antialiasing effects. To disable this smoothing (showing natural pixelation instead), set the **antialiasing** prop to `false`."
+  "docs-image-layout-image-quality-description": "Drawing at a low resolution may show antialiasing effects. To disable this smoothing (showing natural pixelation instead), set the **antialiasing** prop to `false`.",
+  "docs-grid-title": "Grid",
+  "docs-grid-description": "You can set up a grid using the **grid** prop. It can receive a single value, which will represent the number of cells to divide the visible space both horizontally and vertically, or it can receive a tuple `[ number, number ]`, where the first number represents the number of horizontal cells and the second the number of vertical cells.",
+  "docs-grid-example-square": "Square grid example (3x3)",
+  "docs-grid-example-rectangle": "Grid example (4x5)",
+  "docs-stroke-tools-title": "Stroke Tools",
+  "docs-stroke-tools-intro": "Stroke tools allow you to create lines.",
+  "docs-stroke-tools-usage-info": "To use a tool, you must import the Tool enum and pass it to the Draw component's tool prop.",
+  "docs-stroke-tools-pencil-description": "The pencil is used through the value `Tool.PENCIL`. This tool can create continuous strokes, with rounded edges and no transparency.",
+  "docs-stroke-tools-pencil-warning": "If the color code contains an alpha channel, it will be ignored for this tool.",
+  "docs-stroke-tools-eraser-description": "The eraser removes drawing where it passes, maintaining a \"stroke\" with qualities similar to the pencil. Its value is `Tool.ERASER`.",
+  "docs-stroke-tools-eraser-warning": "The color code is ignored when the eraser is in use.",
+  "docs-stroke-tools-tape-description": "The adhesive tape `Tool.TAPE` has an irregular stroke, showing angled cuts when changing direction; it supports transparency and has straight edges (creating a rectangular-shaped stroke).",
+  "docs-stroke-tools-tool-size": "Tool Size",
+  "docs-stroke-tools-toolsize-description": "It is specified by the *prop* **toolSize** (default is 4 pixels). Its purpose is to assign a customizable size to the stroke of the tool being used."
 }

@@ -1,0 +1,34 @@
+{
+  "target": "grid",
+  "title": "docs-grid-title",
+  "content": [
+    {
+      "type": "p",
+      "text": "docs-grid-description"
+    },
+    {
+      "type": "p",
+      "text": "docs-grid-example-square"
+    },
+    {
+      "type": "code",
+      "code": "import { Draw, Tool } from 'react-native-drawing'\nimport { ReactElement } from 'react'\n\nconst App = (): ReactElement => {\n  return (\n    <Draw\n      resolution={ 720 }\n      grid={ 3 }\n      color=\"red\"\n      tool={ Tool.PENCIL } />\n  )\n}\n\nexport default App",
+      "language": "tsx",
+      "fileName": "App.tsx",
+      "maximizable": true,
+      "_preview": true
+    },
+    {
+      "type": "p",
+      "text": "docs-grid-example-rectangle"
+    },
+    {
+      "type": "code",
+      "code": "import { Draw, Tool } from 'react-native-drawing'\nimport { ReactElement } from 'react'\n\nconst App = (): ReactElement => {\n  return (\n    <Draw\n      resolution={ 720 }\n      grid={ [ 4, 5 ] }\n      color=\"red\"\n      tool={ Tool.PENCIL } />\n  )\n}\n\nexport default App",
+      "language": "tsx",
+      "fileName": "App.tsx",
+      "maximizable": true,
+      "_preview": true
+    }
+  ]
+}
