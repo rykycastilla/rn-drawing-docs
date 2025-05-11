@@ -1,3 +1,4 @@
+import auxTools from './aux_tools.json'
 import dotTools from './dot_tools.json'
 import filler from './filler.json'
 import imageLayout from './image_layout.json'
@@ -17,4 +18,5 @@ export const data: PageStructure[] = [
   dotTools,
   spray,
   filler,
+  auxTools,
 ]

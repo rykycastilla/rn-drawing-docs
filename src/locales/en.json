@@ -105,5 +105,16 @@
   "docs-filler-animation-description": "By default the filler waits a moment (processes) and applies changes, however this process can be made more visually appealing using the **animatedFiller** prop (setting it to `true`), which will trigger a circular expansion animation starting from the next touch.",
   "docs-filler-warning-animation-performance": "Using animation, while visually attractive, will make the process slower",
   "docs-filler-subtitle-filling-event": "FillingEvent",
-  "docs-filler-filling-event-description": "Every time the filler starts and finishes a task it emits a `FillingEvent`, which can be captured through the **onFilling** prop. Each `FillingEvent` contains the properties **target** (triggering canvas), **isStarting**, **isEnding**, **x**, **y**, and **color**."
+  "docs-filler-filling-event-description": "Every time the filler starts and finishes a task it emits a `FillingEvent`, which can be captured through the **onFilling** prop. Each `FillingEvent` contains the properties **target** (triggering canvas), **isStarting**, **isEnding**, **x**, **y**, and **color**.",
+  "docs-aux-tools-title": "Auxiliary Tools",
+  "docs-aux-tools-description": "These tools are not capable of creating drawings, however they are necessary to properly manipulate and observe the drawing in certain scenarios.",
+  "docs-aux-tools-none-subtitle": "None",
+  "docs-aux-tools-none-description": "`Tool.NONE` Disables any drawing action, allowing the canvas to be touched without risk of manipulation.",
+  "docs-aux-tools-zoom-subtitle": "Zoom",
+  "docs-aux-tools-zoom-description": "`Tool.ZOOM` Enables zoom/scroll capabilities in the view to change perspective without modification risk [If grid is active, it will also move with scroll].",
+  "docs-aux-tools-scrollevent-subtitle": "ScrollEvent",
+  "docs-aux-tools-scrollevent-description": "When scrolling the visible area of the drawing, a `ScrollEvent` is emitted. This can be captured by the *prop* **onScroll** and contains the properties: **target** (emitting canvas), **x**, **y** (represent current view section coordinates), **scale** (zoom multiplier from original container), **view** (object with **width** and **height** indicating current view size)",
+  "docs-aux-tools-scrollevent-info": "This event uses pixels as measurement unit and always references the drawing's specified resolution.",
+  "docs-aux-tools-eyedropper-subtitle": "Eyedropper (EyeDropperEvent)",
+  "docs-aux-tools-eyedropper-description": "`Tool.EYE_DROPPER` triggers an `EyeDropperEvent` every time the drawing canvas is touched while active. The `EyeDropperEvent` contains **target** and **color** properties. The purpose of this mechanic is to extract specific colors from the drawing for identification and reuse."
 }

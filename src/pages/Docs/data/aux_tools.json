@@ -1,0 +1,46 @@
+{
+  "target": "aux-tools",
+  "title": "docs-aux-tools-title",
+  "content": [
+    {
+      "type": "p",
+      "text": "docs-aux-tools-description"
+    },
+    {
+      "type": "subtitle",
+      "text": "docs-aux-tools-none-subtitle"
+    },
+    {
+      "type": "p",
+      "text": "docs-aux-tools-none-description"
+    },
+    {
+      "type": "subtitle",
+      "text": "docs-aux-tools-zoom-subtitle"
+    },
+    {
+      "type": "p",
+      "text": "docs-aux-tools-zoom-description"
+    },
+    {
+      "type": "subtitle",
+      "text": "docs-aux-tools-scrollevent-subtitle"
+    },
+    {
+      "type": "p",
+      "text": "docs-aux-tools-scrollevent-description"
+    },
+    {
+      "type": "info",
+      "text": "docs-aux-tools-scrollevent-info"
+    },
+    {
+      "type": "subtitle",
+      "text": "docs-aux-tools-eyedropper-subtitle"
+    },
+    {
+      "type": "p",
+      "text": "docs-aux-tools-eyedropper-description"
+    }
+  ]
+}
