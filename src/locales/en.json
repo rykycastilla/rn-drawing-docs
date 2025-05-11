@@ -140,5 +140,8 @@
   "docs-history-warning-resolution": "If the drawing resolution changes, the history will reset, using a rescaled version of the current image as the first snapshot.",
   "docs-history-event-subtitle": "HistoryEvent",
   "docs-history-event-props": "Every history change triggers a `HistoryEvent`, handled by the **onHistoryMove** prop. Its properties include **target**, **canUndo**, and **canRedo** (booleans indicating safe undo/redo availability at the current history point).",
-  "docs-history-event-listener": "This event is also available through the eventListener as 'history-move'"
+  "docs-history-event-listener": "This event is also available through the eventListener as 'history-move'",
+  "docs-performance-test-title": "FPS Testing",
+  "docs-performance-test-description": "To know the current fps of the drawing, you need to use the **useFps** hook. When you pass the drawing's ref to this hook, it will return a number representing the current fps of the view.",
+  "docs-performance-test-warning": "If something other than a drawing reference is sent to the hook, an error will be thrown."
 }

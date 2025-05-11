@@ -1,0 +1,21 @@
+{
+  "target": "performance-test",
+  "title": "docs-performance-test-title",
+  "content": [
+    {
+      "type": "p",
+      "text": "docs-performance-test-description"
+    },
+    {
+      "type": "code",
+      "code": "import { Draw, Tool, useFps } from 'react-native-drawing'\nimport { ReactElement, useRef } from 'react'\nimport { Text } from 'react-native'\n\nconst App = (): ReactElement => {\n\n  const drawRef = useRef( null )\n  const fps = useFps( drawRef )\n  \n  return (\n    <>\n      <Text>FPS: { fps }</Text>\n      <Draw\n        ref={ drawRef }\n        resolution={ 720 }\n        color=\"red\"\n        tool={ Tool.PENCIL } />\n    </>\n  )\n\n}\n\nexport default App",
+      "language": "tsx",
+      "fileName": "App.tsx",
+      "maximizable": true
+    },
+    {
+      "type": "warning",
+      "text": "docs-performance-test-warning"
+    }
+  ]
+}

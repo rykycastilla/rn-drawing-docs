@@ -7,6 +7,7 @@ import grid from './grid.json'
 import history from './history.json'
 import imageLayout from './image_layout.json'
 import installing from './installing.json'
+import performanceTest from './performance_test.json'
 import spray from './spray.json'
 import strokeTools from './stroke_tools.json'
 import { PageStructure } from '../models'
@@ -23,4 +24,5 @@ export const data: PageStructure[] = [
   auxTools,
   drawRef,
   history,
+  performanceTest,
 ]
