@@ -143,5 +143,6 @@
   "docs-history-event-listener": "Este evento también está disponible mediante el eventListener, como 'history-move'",
   "docs-performance-test-title": "Testeo de FPS",
   "docs-performance-test-description": "Si se desea conocer los fps actuales del dibujo es necesario utilizar el hook **useFps**, al enviarle la ref del dibujo a este hook, retornará un número que representa la cantidad de fps a la que está corriendo la vista actualmente.",
-  "docs-performance-test-warning": "En caso de enviar algo que no sea una referencia de un dibujo al hook, se enviará un error un error"
+  "docs-performance-test-warning": "En caso de enviar algo que no sea una referencia de un dibujo al hook, se enviará un error un error",
+  "home-docs-link": "Descubre todo el potencial en la documentación"
 }
