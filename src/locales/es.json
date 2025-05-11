@@ -130,5 +130,15 @@
   "docs-draw-ref-performance-warning": "No se recomienda utilizar estos métodos con frecuencia ya que pueden ocasionar latencia y problemas de rendimiento en el lienzo",
   "docs-draw-ref-performance-warning-cause": "[Esto se debe a la congestión de los canales de comunicación del renderizador]",
   "docs-draw-ref-events-subtitle": "Eventos",
-  "docs-draw-ref-events-text": "Todos los eventos del componente `Draw` son accesibles también mediante `Draw.addEventListener`, este método recibe dos argumentos (un *event type* en string y un *handle callback*), ejecutándose el segundo cada vez que se cumpla el evento con el tipo especificado. Los tipos de eventos admisibles son: `'load'`, `'filling'`, `'scroll'`, `'eye-dropper'` y `'history-move'`.\nTambién hay un método `Draw.removeEventListener`, el cual al recibir un *handler* suscrito al mismo tipo de evento, lo elimina de la lista (dejando de dispararlo)."
+  "docs-draw-ref-events-text": "Todos los eventos del componente `Draw` son accesibles también mediante `Draw.addEventListener`, este método recibe dos argumentos (un *event type* en string y un *handle callback*), ejecutándose el segundo cada vez que se cumpla el evento con el tipo especificado. Los tipos de eventos admisibles son: `'load'`, `'filling'`, `'scroll'`, `'eye-dropper'` y `'history-move'`.\nTambién hay un método `Draw.removeEventListener`, el cual al recibir un *handler* suscrito al mismo tipo de evento, lo elimina de la lista (dejando de dispararlo).",
+  "docs-history-title": "Historial de cambios",
+  "docs-history-overview": "**RN Drawing** tiene implementado un historial de cambios para poder seguir el progreso del dibujo. Este historial guarda una *snapshot* cada vez que se levanta el dedo al terminar un trazo, termina una tarea del rellenador, se limpia el lienzo o se establece una imagen.",
+  "docs-history-gc-info": "El historial posee una implementación de recolector de basura para eliminar automáticamente snapshots innecesarias y ahorrar espacio en memoria.",
+  "docs-history-navigation-subtitle": "Navegación por el historial",
+  "docs-history-undo-redo": "Para navegar por el historial se tiene los métodos `Draw.undo` y `Draw.redo`, los cuales deshacen y rehacen los cambios, respectivamente. Al pasar a una *snapshot* antigua y modificarla, se pierde la oportunidad de rehacer el cambio, reiniciando el historial desde este nuevo punto.",
+  "docs-history-warning-exceptions": "Al intentar deshacer o rehacer un cambio en el historial, si este ha llegado a sus extremos saltará una excepción.",
+  "docs-history-warning-resolution": "Si la resolución del dibujo cambia, el historial será reiniciado, tomando como primera snapshot el resultado de reescalar la imagen que se encontraba en ese momento.",
+  "docs-history-event-subtitle": "HistoryEvent",
+  "docs-history-event-props": "Cada vez que se realiza algun cambio en el historial es disparado un `HistoryEvent`, este puede ser manejado por la *prop* **onHistoryMove**. Las propiedades de este son **target**, **canUndo** y **canRedo**, estas dos últimas son booleanas, que indican si en el punto actual del historial es posible deshacer o rehacer de forma segura.",
+  "docs-history-event-listener": "Este evento también está disponible mediante el eventListener, como 'history-move'"
 }

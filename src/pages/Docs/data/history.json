@@ -1,0 +1,42 @@
+{
+  "target": "history",
+  "title": "docs-history-title",
+  "content": [
+    {
+      "type": "p",
+      "text": "docs-history-overview"
+    },
+    {
+      "type": "info",
+      "text": "docs-history-gc-info"
+    },
+    {
+      "type": "subtitle",
+      "text": "docs-history-navigation-subtitle"
+    },
+    {
+      "type": "p",
+      "text": "docs-history-undo-redo"
+    },
+    {
+      "type": "warning",
+      "text": "docs-history-warning-exceptions"
+    },
+    {
+      "type": "warning",
+      "text": "docs-history-warning-resolution"
+    },
+    {
+      "type": "subtitle",
+      "text": "docs-history-event-subtitle"
+    },
+    {
+      "type": "p",
+      "text": "docs-history-event-props"
+    },
+    {
+      "type": "info",
+      "text": "docs-history-event-listener"
+    }
+  ]
+}

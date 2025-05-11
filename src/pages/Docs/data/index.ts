@@ -2,10 +2,11 @@ import auxTools from './aux_tools.json'
 import dotTools from './dot_tools.json'
 import drawRef from './draw_ref.json'
 import filler from './filler.json'
-import imageLayout from './image_layout.json'
-import installing from './installing.json'
 import gettingStarted from './getting_started.json'
 import grid from './grid.json'
+import history from './history.json'
+import imageLayout from './image_layout.json'
+import installing from './installing.json'
 import spray from './spray.json'
 import strokeTools from './stroke_tools.json'
 import { PageStructure } from '../models'
@@ -21,4 +22,5 @@ export const data: PageStructure[] = [
   filler,
   auxTools,
   drawRef,
+  history,
 ]
