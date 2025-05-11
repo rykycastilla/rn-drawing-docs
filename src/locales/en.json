@@ -145,6 +145,7 @@
   "docs-performance-test-description": "To know the current fps of the drawing, you need to use the **useFps** hook. When you pass the drawing's ref to this hook, it will return a number representing the current fps of the view.",
   "docs-performance-test-warning": "If something other than a drawing reference is sent to the hook, an error will be thrown.",
   "home-docs-link": "Discover all the potential in the documentation",
-    "docs-info": "Info",
-  "docs-warning": "Warning"
+  "docs-info": "Info",
+  "docs-warning": "Warning",
+  "docs-index": "Docs"
 }

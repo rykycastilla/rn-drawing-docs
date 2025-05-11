@@ -1,12 +1,14 @@
 import DocsNavLinkList from '@/components/DocsNavLinkList'
 import { BookIcon } from 'lucide-react'
 import { ReactElement } from 'react'
+import { useLanguage } from '@/hooks/language'
 
 const MenuDescription = (): ReactElement => {
+  const { t } = useLanguage()
   return (
     <div className="flex items-center gap-2 px-3 mb-2">
       <BookIcon className="h-5 w-5 text-pink-500 dark:text-pink-400" />
-      <h3 className="font-semibold text-gray-900 dark:text-white">Docs</h3>
+      <h3 className="font-semibold text-gray-900 dark:text-white">{ t( 'docs-index' ) }</h3>
     </div>
   )
 }

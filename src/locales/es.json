@@ -146,5 +146,6 @@
   "docs-performance-test-warning": "En caso de enviar algo que no sea una referencia de un dibujo al hook, se enviará un error un error",
   "home-docs-link": "Descubre todo el potencial en la documentación",
   "docs-info": "Información",
-  "docs-warning": "Advertencia"
+  "docs-warning": "Advertencia",
+  "docs-index": "Documentación"
 }
