@@ -1,4 +1,5 @@
 import CloseButton from './components/CloseButton'
+import DocsNavMenu from './components/DocsNavMenu'
 import GitHubButton from './components/GitHubButton'
 import LanguageToggle from './components/LanguageToggle'
 import MenuButton from './components/MenuButton'
@@ -7,10 +8,12 @@ import ThemeButton from './components/ThemeButton'
 import { REPO_NAME, REPO_OWNER } from '@/constants'
 import { ReactElement, useState } from 'react'
 import { useCallback } from 'react'
+import { useSelectedDoc } from './hooks/selected_doc'
 
 const MobileMenu = (): ReactElement => {
 
   const [ isOpen, setIsOpen ] = useState( false )
+  const selected = useSelectedDoc()
 
   const close = useCallback( () => {
     setIsOpen( false )
@@ -25,6 +28,8 @@ const MobileMenu = (): ReactElement => {
           <GitHubButton repoOwner={ REPO_OWNER } repoName={ REPO_NAME } close={ close } />
           <LanguageToggle close={ close } />
           <ThemeButton close={ close } />
+          <div className="h-px bg-gray-200 dark:bg-gray-800 my-2" />
+          { ( selected !== undefined ) && <DocsNavMenu selected={ selected } close={ close } /> }
         </div>
       </Panel>
     </div>
