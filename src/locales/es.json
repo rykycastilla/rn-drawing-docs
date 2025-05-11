@@ -116,5 +116,19 @@
   "docs-aux-tools-scrollevent-description": "Al desplazar el área visible del dibujo, se emite un `ScrollEvent`, este puede ser capturado por la *prop* **onSroll** y posee las propiedades: **target** (Lienzo emisor del evento), **x**, **y** (representan las coordenadas de la sección actual de la vista), **scale** (La cantidad de veces que aumenta la imagen para llegar a la vista que se muestra desde el contenedor original), **view** (un objeto de propiedades **width** y **height** que indican el tamaño de la vista actual)",
   "docs-aux-tools-scrollevent-info": "La unidade de medida que utiliza este evento es el píxel y siempre toma como referencia la resolcuión especificada en el dibujo.",
   "docs-aux-tools-eyedropper-subtitle": "Gotero (EyeDropperEvent)",
-  "docs-aux-tools-eyedropper-description": "`Tool.EYE_DROPPER` lanza un `EyeDropperEvent` cada vez que se toca el lienzo de dibujo mientras está en uso. El `EyeDropperEvent` tiene las propiedades **target** y **color**. El objetivo de esta mecánica es poder extraer un color específico del dibujo para conocerlo y poder reutilizarlo."
+  "docs-aux-tools-eyedropper-description": "`Tool.EYE_DROPPER` lanza un `EyeDropperEvent` cada vez que se toca el lienzo de dibujo mientras está en uso. El `EyeDropperEvent` tiene las propiedades **target** y **color**. El objetivo de esta mecánica es poder extraer un color específico del dibujo para conocerlo y poder reutilizarlo.",
+  "docs-draw-ref-title": "Referencia de Dibujo",
+  "docs-draw-ref-intro": "Utilizando el *hook* `useRef` se puede obtener la referencia de un dibujo. Esta referencia de dibujo tiene métodos y propiedades útiles para poder manipular el lienzo de forma programática.",
+  "docs-draw-ref-properties-subtitle": "Propiedades",
+  "docs-draw-ref-properties-text": "La referencia de dibujo posee propiedades útiles que representan las *props* de su componente **antialiasing**, **width** y **height** (resolución), **tool** y **toolColor**.",
+  "docs-draw-ref-ready-subtitle": "ready",
+  "docs-draw-ref-ready-text": "`Draw.ready` es una promesa que se resuelve cuando se carga por completo el lienzo y está listo para dibujar",
+  "docs-draw-ref-clear-subtitle": "Limpiador",
+  "docs-draw-ref-clear-text": "El método `Draw.clear` elimina todo el dibujo y opcionalmente puede recibir un color para teñir el fondo del lienzo.",
+  "docs-draw-ref-image-getter-setter-subtitle": "Getter/Setter de imagen",
+  "docs-draw-ref-image-getter-setter-text": "`Draw.getImage` y `Draw.setImage` permiten obtener y establecer respectivamente el contenido del dibujo en formato URL Base64.",
+  "docs-draw-ref-performance-warning": "No se recomienda utilizar estos métodos con frecuencia ya que pueden ocasionar latencia y problemas de rendimiento en el lienzo",
+  "docs-draw-ref-performance-warning-cause": "[Esto se debe a la congestión de los canales de comunicación del renderizador]",
+  "docs-draw-ref-events-subtitle": "Eventos",
+  "docs-draw-ref-events-text": "Todos los eventos del componente `Draw` son accesibles también mediante `Draw.addEventListener`, este método recibe dos argumentos (un *event type* en string y un *handle callback*), ejecutándose el segundo cada vez que se cumpla el evento con el tipo especificado. Los tipos de eventos admisibles son: `'load'`, `'filling'`, `'scroll'`, `'eye-dropper'` y `'history-move'`.\nTambién hay un método `Draw.removeEventListener`, el cual al recibir un *handler* suscrito al mismo tipo de evento, lo elimina de la lista (dejando de dispararlo)."
 }
