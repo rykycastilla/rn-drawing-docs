@@ -8,11 +8,11 @@
     },
     {
       "type": "code",
-      "code": "import { Draw, Tool } from 'react-native-drawing'\nimport { ReactElement } from 'react'\n\nconst App = (): ReactElement => {\n  return (\n    <Draw\n      resolution={ 720 }\n      color=\"orange\"\n      tool={ Tool.SPRAY } />\n  )\n}\n\nexport default App",
+      "code": "import { Draw, Tool } from 'react-native-drawing'\nimport { ReactElement } from 'react'\n\nconst App = (): ReactElement => {\n  return (\n    <Draw\n      resolution={ 720 }\n      aspectRatio={ 9 / 16 }\n      color=\"orange\"\n      tool={ Tool.SPRAY }\n      toolSize={ 90 } />\n  )\n}\n\nexport default App\n",
       "language": "tsx",
       "fileName": "App.tsx",
       "maximizable": true,
-      "_preview": true
+      "preview": "/docs/previews/spray.mp4"
     },
     {
       "type": "subtitle",
@@ -21,6 +21,14 @@
     {
       "type": "p",
       "text": "docs-spray-control"
+    },
+    {
+      "type": "code",
+      "code": "import { Draw, Tool } from 'react-native-drawing'\nimport { ReactElement } from 'react'\n\nconst App = (): ReactElement => {\n  return (\n    <Draw\n      resolution={ 720 }\n      aspectRatio={ 9 / 16 }\n      color=\"yellow\"\n      tool={ Tool.SPRAY }\n      toolSize={ 75 }\n      sprayParticles={ { amount: 30, scale: 2.5 } } />\n  )\n}\n\nexport default App\n",
+      "language": "tsx",
+      "fileName": "App.tsx",
+      "maximizable": true,
+      "preview": "/docs/previews/spray_variant.mp4"
     },
     {
       "type": "subtitle",
