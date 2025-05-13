@@ -43,6 +43,10 @@
       "text": "docs-filler-warning-animation-performance"
     },
     {
+      "type": "warning",
+      "text": "docs-filler-resolution-warning"
+    },
+    {
       "type": "info",
       "text": "docs-filler-info-toolsize"
     },

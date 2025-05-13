@@ -107,6 +107,7 @@
   "docs-filler-subtitle-animation": "Animating the Filler",
   "docs-filler-animation-description": "By default the filler waits a moment (processes) and applies changes, however this process can be made more visually appealing using the **animatedFiller** prop (setting it to `true`), which will trigger a circular expansion animation starting from the next touch.",
   "docs-filler-warning-animation-performance": "Using animation, while visually attractive, will make the process slower",
+  "docs-filler-resolution-warning": "To increase performance its recommended to decrease resolution",
   "docs-filler-subtitle-filling-event": "FillingEvent",
   "docs-filler-filling-event-description": "Every time the filler starts and finishes a task it emits a `FillingEvent`, which can be captured through the **onFilling** prop. Each `FillingEvent` contains the properties **target** (triggering canvas), **isStarting**, **isEnding**, **x**, **y**, and **color**.",
   "docs-aux-tools-title": "Auxiliary Tools",
