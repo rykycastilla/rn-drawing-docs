@@ -53,7 +53,7 @@
   "docs-getting-started-resolution-heading": "Resolution",
   "docs-getting-started-resolution-description": "Represents the number of horizontal pixels[Default aspect ratio will be 1:1 (square)] that the image will contain. Increasing this value improves image quality and resource requirements.",
   "docs-getting-started-color-heading": "Color",
-  "docs-getting-started-color-description": "Defines the value with which drawing will be performed.",
+  "docs-getting-started-color-description": "Defines the value with which drawing will be performed. It would be any valid css color code (hexadecimal #, rgb function, rgba, hsl and keywords).",
   "docs-getting-started-tool-heading": "Tool",
   "docs-getting-started-tool-description": "Current tool that will identify the type of stroke.",
   "docs-getting-started-load-event-heading": "Load Event",
