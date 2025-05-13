@@ -1,4 +1,4 @@
-import { useDocsLocation } from '@/hooks/docs_location'
+import { useDocsLocation } from '@/hooks/docs_location/docs_location'
 import { useParams } from 'react-router-dom'
 
 /**

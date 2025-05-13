@@ -6,7 +6,7 @@ import MobileMenu from '@/components/MobileMenu'
 import ThemeToggle from './components/ThemeToggle'
 import { ReactElement } from 'react'
 import { REPO_NAME, REPO_OWNER } from '@/constants'
-import { useDocsLocation } from '@/hooks/docs_location'
+import { useDocsLocation } from '@/hooks/docs_location/docs_location'
 
 const NavBar = (): ReactElement => {
   const isInDocs = useDocsLocation()

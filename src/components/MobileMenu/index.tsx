@@ -28,8 +28,14 @@ const MobileMenu = (): ReactElement => {
           <GitHubButton repoOwner={ REPO_OWNER } repoName={ REPO_NAME } close={ close } />
           <LanguageToggle close={ close } />
           <ThemeButton close={ close } />
-          <div className="h-px bg-gray-200 dark:bg-gray-800 my-2" />
-          { ( selected !== undefined ) && <DocsNavMenu selected={ selected } close={ close } /> }
+          {
+            ( selected !== undefined ) &&
+            <>
+              { /* Section divider */ }
+              <div className="h-px bg-gray-200 dark:bg-gray-800 my-2" />
+              <DocsNavMenu selected={ selected } close={ close } />
+            </>
+          }
         </div>
       </Panel>
     </div>
