@@ -151,5 +151,6 @@
   "home-docs-link": "Descubre todo el potencial en la documentación",
   "docs-info": "Información",
   "docs-warning": "Advertencia",
-  "docs-index": "Documentación"
+  "docs-index": "Documentación",
+  "only-android-disclaimer": "Por el momento RN Drawing solo es completamente compatible con la plataforma Android"
 }
