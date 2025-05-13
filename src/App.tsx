@@ -1,6 +1,5 @@
 import Docs from '@/pages/Docs'
-import Home from '@/pages/Home'
-import HomeLayout from '@/pages/HomeLayout'
+import Home, { HomeLayout } from '@/pages/Home'
 import NotFound from '@/pages/NotFound'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ReactElement } from 'react'
