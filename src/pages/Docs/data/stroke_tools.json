@@ -12,7 +12,7 @@
     },
     {
       "type": "subtitle",
-      "text": "Lápiz"
+      "text": "docs-stroke-tools-pencil-title"
     },
     {
       "type": "p",
@@ -48,7 +48,7 @@
     },
     {
       "type": "subtitle",
-      "text": "Borrador"
+      "text": "docs-stroke-tools-eraser-title"
     },
     {
       "type": "p",
@@ -63,12 +63,12 @@
       "preview": "/docs/previews/eraser.mp4"
     },
     {
-      "type": "warning",
-      "text": "docs-stroke-tools-eraser-warning"
+      "type": "info",
+      "text": "docs-stroke-tools-eraser-info"
     },
     {
       "type": "subtitle",
-      "text": "Cinta"
+      "text": "docs-stroke-tools-tape-title"
     },
     {
       "type": "p",
