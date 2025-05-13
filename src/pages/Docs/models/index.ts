@@ -1,4 +1,5 @@
 export * from './CodeComponent'
 export * from './Component'
-export * from './PageStructure'
+export * from './Page'
+export * from './pages'
 export * from './TextComponent'

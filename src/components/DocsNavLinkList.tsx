@@ -1,4 +1,4 @@
-import { data } from '@/pages/Docs/data'
+import { pages } from '@/pages/Docs'
 import { Link } from 'react-router-dom'
 import { ReactElement } from 'react'
 import { useLanguage } from '@/hooks/language'
@@ -34,7 +34,7 @@ interface NavLinkListProps {
 const DocsNavLinkList = ( props:NavLinkListProps ): ReactElement => {
   const { selected, onClick } = props
   const navLinkList: ReactElement[] = []
-  for( const page of data ) {
+  for( const page of pages ) {
     const { title, target } = page
     const isSelected: boolean = selected === target
     const navLink: ReactElement = (
