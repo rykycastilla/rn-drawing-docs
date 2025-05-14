@@ -5,8 +5,8 @@ import { ReactElement } from 'react'
 import { useTheme } from '@/libs/ui/hooks/theme'
 
 const HeroMockup = (): ReactElement => {
-  const { theme } = useTheme()
-  const heroMockup : string = ( theme === 'dark' ) ? heroMockupDark : heroMockupLight
+  const { resolvedTheme } = useTheme()
+  const heroMockup : string = ( resolvedTheme === 'dark' ) ? heroMockupDark : heroMockupLight
   return (
     <AnimatedMockup className="border-gray-800 dark:border-white mb-8">
       <img src={ heroMockup } />
