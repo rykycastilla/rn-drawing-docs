@@ -1,0 +1,7 @@
+{
+  "docs-dot-tools-info-usage": "Para utilizar una herramienta se debe importar el enum Tool y enviárselo a la prop tool del componente Draw.",
+  "docs-dot-tools-subtitle-dot-pen": "Bolígrafo de Puntos",
+  "docs-dot-tools-description-dot-pen": "`Tool.DOT_PEN` permite crear puntos en lugares específicos con tamaño y color personalizables.",
+  "docs-dot-tools-subtitle-square-dot-pen": "Bolígrafo de Puntos (Cuadrados)",
+  "docs-dot-tools-description-square-dot-pen": "`Tool.SQUARE_DOT_PEN` posee las mismas características que el Bolígrafo de Puntos (regular), excepto que los de este tienen forma cuadrada."
+}

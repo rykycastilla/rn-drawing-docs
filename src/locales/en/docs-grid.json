@@ -1,0 +1,5 @@
+{
+  "docs-grid-description": "You can set up a grid using the **grid** prop. It can receive a single value, which will represent the number of cells to divide the visible space both horizontally and vertically, or it can receive a tuple `[ number, number ]`, where the first number represents the number of horizontal cells and the second the number of vertical cells.",
+  "docs-grid-example-square": "Square grid example (3x3)",
+  "docs-grid-example-rectangle": "Grid example (4x5)"
+}

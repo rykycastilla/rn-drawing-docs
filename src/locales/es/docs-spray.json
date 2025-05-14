@@ -1,0 +1,7 @@
+{
+  "docs-spray-description": "Esta herramienta dispersa partículas aleatorias en un área determinada. Su valor es `Tool.SPRAY`",
+  "docs-spray-control": "La *prop* **sprayParticles** permite controlar la escala y la cantidad de las partículas del Spray mediante un objeto con estas propiedades:",
+  "docs-spray-size-variation": "La *prop* **toolSize** también puede variar la dispersión del Spray, por lo que controlando estos valores se pueden conseguir efectos variados.",
+  "docs-spray-control-title": "Control de Spray",
+  "docs-spray-size-variation-title": "Variación de tamaño"
+}

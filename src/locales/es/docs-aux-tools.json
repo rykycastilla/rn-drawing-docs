@@ -1,0 +1,12 @@
+{
+  "docs-aux-tools-description": "Estas herramientas no son capaces de crear dibujos, sin emabrgo, son necesarias para manipular y observar correctamente el dibujo en ciertos escenarios.",
+  "docs-aux-tools-none-subtitle": "Ninguna",
+  "docs-aux-tools-none-description": "`Tool.NONE` Deshabilita culaquier acción de dibujo, permitiendo que se pueda tocar el lienzo sin riesgos de manipulación.",
+  "docs-aux-tools-zoom-subtitle": "Zoom",
+  "docs-aux-tools-zoom-description": "`Tool.ZOOM` Habilita las habilidades de zoom/scroll en la vista para cambiar la perspectiva sin riesgo de modificación[Si la grilla está activa, también se moverán con el scroll.].",
+  "docs-aux-tools-scrollevent-subtitle": "ScrollEvent",
+  "docs-aux-tools-scrollevent-description": "Al desplazar el área visible del dibujo, se emite un `ScrollEvent`, este puede ser capturado por la *prop* **onSroll** y posee las propiedades: **target** (Lienzo emisor del evento), **x**, **y** (representan las coordenadas de la sección actual de la vista), **scale** (La cantidad de veces que aumenta la imagen para llegar a la vista que se muestra desde el contenedor original), **view** (un objeto de propiedades **width** y **height** que indican el tamaño de la vista actual)",
+  "docs-aux-tools-scrollevent-info": "La unidade de medida que utiliza este evento es el píxel y siempre toma como referencia la resolcuión especificada en el dibujo.",
+  "docs-aux-tools-eyedropper-subtitle": "Gotero (EyeDropperEvent)",
+  "docs-aux-tools-eyedropper-description": "`Tool.EYE_DROPPER` lanza un `EyeDropperEvent` cada vez que se toca el lienzo de dibujo mientras está en uso. El `EyeDropperEvent` tiene las propiedades **target** y **color**. El objetivo de esta mecánica es poder extraer un color específico del dibujo para conocerlo y poder reutilizarlo."
+}

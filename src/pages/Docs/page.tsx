@@ -4,13 +4,14 @@ import NotFound from '@/pages/NotFound'
 import Title from '@/components/Title'
 import { pages } from './models'
 import { ReactElement, useEffect, useMemo } from 'react'
-import { useLanguage } from '@/hooks/language'
+import { useLanguage, useLocalesOf } from '@/hooks/language'
 import { useNavigate, useParams } from 'react-router-dom'
 
 const Docs = (): ReactElement | null => {
 
   const { topic } = useParams()
   const navigate = useNavigate()
+  useLocalesOf( 'docs' )
   const { t } = useLanguage()
 
   // Redirecting to first doc page by default

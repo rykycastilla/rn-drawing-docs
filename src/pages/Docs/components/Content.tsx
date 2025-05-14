@@ -6,7 +6,7 @@ import Title from './Title'
 import Warning from './Warning'
 import { CodeComponent, Component, Page, TextComponent } from '../models'
 import { ReactElement, useMemo } from 'react'
-import { useLanguage } from '@/hooks/language'
+import { useLanguage, useLocalesOf } from '@/hooks/language'
 import { usePageContent } from '../hooks/page_content'
 
 function isCodeComp( comp:Component ): comp is CodeComponent {
@@ -68,8 +68,9 @@ interface ContentProps {
 const Content = ( props:ContentProps ): ReactElement => {
 
   const { children:page } = props
-  const { title } = page
+  const { title, target } = page
   const content = usePageContent( page )
+  useLocalesOf( `docs-${ target }` )
   const { t } = useLanguage()
 
   // Rendering page content based on the data structure provided

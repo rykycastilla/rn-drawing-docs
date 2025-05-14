@@ -1,5 +1,3 @@
-import en from '@/locales/en.json'
-import es from '@/locales/es.json'
 import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
 import { LanguageProvider } from '@/hooks/language'
@@ -12,7 +10,7 @@ import { ThemeProvider } from '@/libs/ui/hooks/theme'
 const HomeLayout = (): ReactElement => {
   return (
     <ThemeProvider>
-      <LanguageProvider langs={ [ en, es ] } defaultLang="en">
+      <LanguageProvider langs="en,es" defaultLang="en">
         <NotFoundDocProvider>
           <div className="flex flex-col min-h-screen">
             <NavBar />

@@ -1,0 +1,13 @@
+{
+  "language": "Language $1",
+  "change-language": "Change Language",
+  "language-es": "Spanish",
+  "language-en": "English",
+  "language-system": "System",
+  "theme": "Theme $1",
+  "change-theme": "Change Theme",
+  "theme-light": "Light",
+  "theme-dark": "Dark",
+  "theme-system": "System",
+  "copyright-statement": "All rights reserved"
+}

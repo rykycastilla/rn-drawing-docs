@@ -1,0 +1,17 @@
+{
+  "docs-info": "Info",
+  "docs-warning": "Warning",
+  "docs-index": "Docs",
+  "docs-installing-title": "Installation",
+  "docs-getting-started-title": "Getting Started",
+  "docs-image-layout-title": "Image and Layout",
+  "docs-grid-title": "Grid",
+  "docs-stroke-tools-title": "Stroke Tools",
+  "docs-dot-tools-title": "Dot Tools",
+  "docs-spray-title": "Spray",
+  "docs-filler-title": "Filler",
+  "docs-aux-tools-title": "Auxiliary Tools",
+  "docs-draw-ref-title": "Drawing Reference",
+  "docs-history-title": "History",
+  "docs-performance-test-title": "FPS Testing"
+}

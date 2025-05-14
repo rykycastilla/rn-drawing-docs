@@ -1,62 +1,62 @@
-import { Lang } from './Lang'
 import { LanguageContext } from './context'
+import { LanguageTools } from './LanguageTools'
 import { ReactElement, useCallback, useMemo } from 'react'
 import { UnexpectedDefaultLanguageError } from './UnexpectedDefaultLanguageError'
 import { useDocLanguage } from './doc_language'
+import { useLangsBuilder } from './langs_builder'
+import { usePageLocalesHandler } from './page_locales_handler'
 import { useStorageState } from '@/libs/ui/hooks/storage_state'
 import { useTemplateTranslation } from './template_translation'
 
-const SYSTEM = 'system'
+import { useList } from '@/hooks/list'
 
-interface LanguageProviderProps<T extends Lang> {
+interface LanguageProviderProps {
   children: ReactElement
-  langs: T[]
+  langs: string
   defaultLang: string
 }
 
-const LanguageProvider = <T extends Lang>( props:LanguageProviderProps<T> ): ReactElement => {
+/**
+ * @param props.languages  Available lang codes divided by ","
+ */
+const LanguageProvider = ( props:LanguageProviderProps ): ReactElement => {
 
-  const { children, langs, defaultLang:defaultLangCode } = props
-  const [ languageConfig, setLanguageConfig ] = useStorageState( SYSTEM, 'language' )
+  const { children, langs:languages, defaultLang:defaultLangCode } = props
+  const [ languageConfig, setLanguageConfig ] = useStorageState( 'system', 'language' )
+  const codeList = useList( languages, ',' )
 
+  // Getting system language
   const getSystemLanguage = useCallback( () => {
     const browserLanguage: string = navigator.language
     const [ languageId ] = browserLanguage.split( '-' ) as [ string, string ]
     return languageId
   }, [] )
 
-  const chooseLanguage = useCallback( ( code:string ) => {
-    let lang: T | undefined
-    let defaultLang: T | undefined
-    for( const thisLang of langs ) {
-      if( thisLang.CODE === defaultLangCode ) { defaultLang = thisLang }
-      if( thisLang.CODE === code ) { lang = thisLang }
+  // Getting language code based on provided config
+  const code = useMemo<string>( () => {
+    let code: string = ( languageConfig === 'system' ) ? getSystemLanguage() : languageConfig
+    // Ensuring default language is a valid language
+    const defaultWasIncluded: boolean = codeList.indexOf( defaultLangCode ) >= 0
+    if( !defaultWasIncluded ) {
+      throw new UnexpectedDefaultLanguageError( defaultLangCode )
     }
-    if( defaultLang === undefined ) {
-      throw new UnexpectedDefaultLanguageError( code )
-    }
-    if( lang !== undefined ) {
-      return lang
-    }
-    else {
+    // Ensuring selected language is a valid language
+    const codeIsInList: boolean = codeList.indexOf( code ) >= 0
+    if( !codeIsInList ) {
       console.warn( `Bad language config. Using default (${ defaultLangCode }) instead` )
-      return defaultLang
+      code = defaultLangCode
     }
-
-  }, [ ...langs, defaultLangCode ] )  // eslint-disable-line
-
-  const [ code, lang ] = useMemo( () => {
-    let code: string = languageConfig
-    if( languageConfig === SYSTEM ) { code = getSystemLanguage() }
-    const lang: T = chooseLanguage( code )
-    return [ code, lang ]
-  }, [ languageConfig, getSystemLanguage, chooseLanguage ] )
+    return code
+  }, [ getSystemLanguage, languageConfig, codeList, defaultLangCode ] )
 
   useDocLanguage( code )
+  const { pageLocales, addPage, quitPage } = usePageLocalesHandler()
+  const lang = useLangsBuilder( pageLocales, code )
   const t = useTemplateTranslation( lang )
+  const tools:LanguageTools = { t, language:code, languageConfig, setLanguage:setLanguageConfig }
 
   return (
-    <LanguageContext.Provider value={ { t, language:code, languageConfig, setLanguage:setLanguageConfig } }>
+    <LanguageContext.Provider value={ { tools, addPage, quitPage } }>
       { children }
     </LanguageContext.Provider>
   )

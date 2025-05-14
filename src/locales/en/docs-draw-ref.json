@@ -1,0 +1,15 @@
+{
+  "docs-draw-ref-intro": "Using the *hook* `useRef` you can get a drawing reference. This drawing reference has useful methods and properties to programmatically manipulate the canvas.",
+  "docs-draw-ref-properties-subtitle": "Properties",
+  "docs-draw-ref-properties-text": "The drawing reference has useful properties representing its component's **antialiasing**, **width** and **height** (resolution), **tool**, and **toolColor**.",
+  "docs-draw-ref-ready-subtitle": "ready",
+  "docs-draw-ref-ready-text": "`Draw.ready` is a promise that resolves when the canvas is fully loaded and ready to draw.",
+  "docs-draw-ref-clear-subtitle": "Clear",
+  "docs-draw-ref-clear-text": "The `Draw.clear` method erases the entire drawing and optionally accepts a color to tint the canvas background.",
+  "docs-draw-ref-image-getter-setter-subtitle": "Image Getter/Setter",
+  "docs-draw-ref-image-getter-setter-text": "`Draw.getImage` and `Draw.setImage` allow getting and setting respectively the drawing content in Base64 URL format.",
+  "docs-draw-ref-performance-warning": "Avoid frequent use of these methods as they may cause latency and performance issues on the canvas.",
+  "docs-draw-ref-performance-warning-cause": "[This is due to renderer communication channel congestion]",
+  "docs-draw-ref-events-subtitle": "Events",
+  "docs-draw-ref-events-text": "All `Draw` component events are also accessible through `Draw.addEventListener`. This method takes two arguments (an *event type* string and a *handle callback*), executing the latter whenever the specified event occurs. Valid event types are: `'load'`, `'filling'`, `'scroll'`, `'eye-dropper'`, and `'history-move'`.\nThere is also a `Draw.removeEventListener` method that removes a subscribed handler for the same event type."
+}

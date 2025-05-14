@@ -1,3 +1,1 @@
-export interface Lang extends Record<string,string> {
-  CODE: string
-}
+export type Lang = Record<string,string>

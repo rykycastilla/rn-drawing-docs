@@ -1,0 +1,11 @@
+{
+  "docs-history-overview": "**RN Drawing** implements a change history system to track drawing progress. This history saves a *snapshot* every time: the finger is lifted after a stroke, a fill task completes, the canvas is cleared, or an image is set.",
+  "docs-history-gc-info": "The history implements a garbage collector to automatically remove unnecessary snapshots and save memory space.",
+  "docs-history-navigation-subtitle": "History Navigation",
+  "docs-history-undo-redo": "To navigate the history, use the `Draw.undo` and `Draw.redo` methods to undo and redo changes respectively. When modifying an old snapshot, redo opportunities are lost, resetting the history from this new point.",
+  "docs-history-warning-exceptions": "Attempting to undo/redo when at history limits will throw an exception.",
+  "docs-history-warning-resolution": "If the drawing resolution changes, the history will reset, using a rescaled version of the current image as the first snapshot.",
+  "docs-history-event-subtitle": "HistoryEvent",
+  "docs-history-event-props": "Every history change triggers a `HistoryEvent`, handled by the **onHistoryMove** prop. Its properties include **target**, **canUndo**, and **canRedo** (booleans indicating safe undo/redo availability at the current history point).",
+  "docs-history-event-listener": "This event is also available through the eventListener as 'history-move'"
+}

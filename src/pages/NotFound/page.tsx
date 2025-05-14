@@ -3,7 +3,7 @@ import { Button } from '@/libs/ui/button'
 import { Home } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { ReactElement } from 'react'
-import { useLanguage } from '@/hooks/language'
+import { useLanguage, useLocalesOf } from '@/hooks/language'
 import { useNotFound } from '@/hooks/docs_location'
 
 const Error404 = (): ReactElement => {
@@ -31,6 +31,7 @@ const HomeButton = (): ReactElement => {
 const NotFound = (): ReactElement => {
   const { t } = useLanguage()
   useNotFound()  // Indicating that it is an invalid route
+  useLocalesOf( 'not-found' )
   return (
     <>
       <Title>{ t( 'page-not-found-title' ) }</Title>

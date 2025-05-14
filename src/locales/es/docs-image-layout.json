@@ -1,0 +1,11 @@
+{
+  "docs-image-layout-resolution": "Resolución",
+  "docs-image-layout-resolution-description": "La *prop* **resolution** representa la cantidad de píxeles horizontales que contendrá el área de dibujo. En caso de cambiar, el contenido existente se escalará y los nuevos trazos tendrán la definición establecida.",
+  "docs-image-layout-dimensions": "Dimensiones",
+  "docs-image-layout-dimensions-description": "Las dimensiones de la vista del dibujo serán definidas mediante la *prop* **width**, que recibe cualquier valor admisible por los estilos de React Native. Para cambiar las dimensiones solo será necesario especificar **width**, ya que el ratio de aspecto será el responsable de otorgar el valor de altura.",
+  "docs-image-layout-aspect-ratio": "Ratio de Aspecto",
+  "docs-image-layout-aspect-ratio-description": "El ratio de aspecto se establece con la *prop* opcional **aspectRatio**. Su valor por defecto es 1 (Pantalla cuadrada). La forma recomendada de indicar el *aspect ratio* es mediante una fracción `width / height`. Al ser modificado el ratio de aspecto, puede recortarse el contenido inferior o expandirse con una mayor área de dibujo, ambas con el objetivo de ajustarse al nuevo valor.",
+  "docs-image-layout-warning": "No es recomendable modificar estas props (resolution, width y aspectRatio), ya que han sido pensadas para mantener un valor fijo y su alteración durante el dibujo puede provocar inconsistencias en la imagen",
+  "docs-image-layout-image-quality": "Calidad de imagen",
+  "docs-image-layout-image-quality-description": "Al dibujar con una resolución muy baja pueden notarse efectos de suavizado, esto es producto del antialiasing. Si se desea, este efecto puede ser desactivado (mostrando la pixelación natural en su lugar) estableciendo la *prop* **antialiasing** a `false`."
+}
