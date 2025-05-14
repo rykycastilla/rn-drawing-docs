@@ -4,9 +4,10 @@ import Paragraph from '@/components/Paragraph'
 import Subtitle from './Subtitle'
 import Title from './Title'
 import Warning from './Warning'
-import { CodeComponent, Component, PageStructure, TextComponent } from '../models'
+import { CodeComponent, Component, Page, TextComponent } from '../models'
 import { ReactElement, useMemo } from 'react'
-import { useLanguage } from '@/hooks/language'
+import { useLanguage, useLocalesOf } from '@/hooks/language'
+import { usePageContent } from '../hooks/page_content'
 
 function isCodeComp( comp:Component ): comp is CodeComponent {
   return comp.type === 'code'
@@ -61,13 +62,15 @@ function renderTextComp( comp:Component, renderedContent:ReactElement[], t:Trans
 }
 
 interface ContentProps {
-  children: PageStructure
+  children: Page
 }
 
 const Content = ( props:ContentProps ): ReactElement => {
 
-  const { children } = props
-  const { title, content } = children
+  const { children:page } = props
+  const { title, target } = page
+  const content = usePageContent( page )
+  useLocalesOf( `docs-${ target }` )
   const { t } = useLanguage()
 
   // Rendering page content based on the data structure provided

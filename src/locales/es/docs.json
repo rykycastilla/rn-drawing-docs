@@ -1,0 +1,17 @@
+{
+  "docs-info": "Información",
+  "docs-warning": "Advertencia",
+  "docs-index": "Documentación",
+  "docs-installing-title": "Instalación",
+  "docs-getting-started-title": "Comenzando a usar",
+  "docs-image-layout-title": "Imagen y Layout",
+  "docs-grid-title": "Grilla",
+  "docs-stroke-tools-title": "Herramientas de Trazo",
+  "docs-dot-tools-title": "Herramientas de puntos",
+  "docs-spray-title": "Spray",
+  "docs-filler-title": "Rellenador",
+  "docs-aux-tools-title": "Herramientas Auxiliares",
+  "docs-draw-ref-title": "Referencia de Dibujo",
+  "docs-history-title": "Historial de cambios",
+  "docs-performance-test-title": "Testeo de FPS"
+}

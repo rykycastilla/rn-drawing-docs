@@ -1,0 +1,7 @@
+{
+  "docs-dot-tools-info-usage": "To use a tool you must import the Tool enum and pass it to the Draw component's tool prop.",
+  "docs-dot-tools-subtitle-dot-pen": "Dot Pen",
+  "docs-dot-tools-description-dot-pen": "`Tool.DOT_PEN` allows creating dots in specific locations with customizable size and color.",
+  "docs-dot-tools-subtitle-square-dot-pen": "Square Dot Pen",
+  "docs-dot-tools-description-square-dot-pen": "`Tool.SQUARE_DOT_PEN` has the same features as the regular Dot Pen, except it creates square-shaped dots."
+}

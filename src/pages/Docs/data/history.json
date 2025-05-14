@@ -1,50 +1,46 @@
-{
-  "target": "history",
-  "title": "docs-history-title",
-  "content": [
-    {
-      "type": "p",
-      "text": "docs-history-overview"
-    },
-    {
-      "type": "info",
-      "text": "docs-history-gc-info"
-    },
-    {
-      "type": "subtitle",
-      "text": "docs-history-navigation-subtitle"
-    },
-    {
-      "type": "p",
-      "text": "docs-history-undo-redo"
-    },
-    {
-      "type": "warning",
-      "text": "docs-history-warning-exceptions"
-    },
-    {
-      "type": "warning",
-      "text": "docs-history-warning-resolution"
-    },
-    {
-      "type": "subtitle",
-      "text": "docs-history-event-subtitle"
-    },
-    {
-      "type": "p",
-      "text": "docs-history-event-props"
-    },
-    {
-      "type": "code",
-      "code": "import { Button } from 'react-native'\nimport { Draw, HistoryEvent, Tool } from 'react-native-drawing'\nimport { ReactElement, useCallback, useRef, useState } from 'react'\n\nconst App = (): ReactElement => {\n  \n  const [ canUndo, setCanUndo ] = useState( false )\n  const [ canRedo, setCanRedo ] = useState( false )\n  const drawRef = useRef<Draw|null>( null )\n\n  const undo = useCallback( () => {\n    const draw: Draw = drawRef.current!\n    draw.undo()\n  }, [ drawRef ] )\n\n  const redo = useCallback( () => {\n    const draw: Draw = drawRef.current!\n    draw.redo()\n  }, [ drawRef ] )\n\n  const onHistoryMove = useCallback( ( event:HistoryEvent ) => {\n    const { canUndo, canRedo } = event\n    setCanUndo( canUndo )\n    setCanRedo( canRedo )\n  }, [] )\n  \n  return (\n    <>\n      <Draw\n        ref={ drawRef }\n        resolution={ 720 }\n        aspectRatio={ 10 / 16 }\n        color=\"#2196f3\"\n        tool={ Tool.PENCIL }\n        toolSize={ 80 }\n        onHistoryMove={ onHistoryMove } />\n      <Button title=\"←\" disabled={ !canUndo } onPress={ undo } />\n      <Button title=\"→\" disabled={ !canRedo } onPress={ redo } />\n    </>\n  )\n}\n\nexport default App\n",
-      "language": "tsx",
-      "fileName": "App.tsx",
-      "maximizable": true,
-      "preview": "/docs/previews/history.mp4"
-    },
-    {
-      "type": "info",
-      "text": "docs-history-event-listener"
-    }
-  ]
-}
+[
+  {
+    "type": "p",
+    "text": "docs-history-overview"
+  },
+  {
+    "type": "info",
+    "text": "docs-history-gc-info"
+  },
+  {
+    "type": "subtitle",
+    "text": "docs-history-navigation-subtitle"
+  },
+  {
+    "type": "p",
+    "text": "docs-history-undo-redo"
+  },
+  {
+    "type": "warning",
+    "text": "docs-history-warning-exceptions"
+  },
+  {
+    "type": "warning",
+    "text": "docs-history-warning-resolution"
+  },
+  {
+    "type": "subtitle",
+    "text": "docs-history-event-subtitle"
+  },
+  {
+    "type": "p",
+    "text": "docs-history-event-props"
+  },
+  {
+    "type": "code",
+    "code": "import { Button } from 'react-native'\nimport { Draw, HistoryEvent, Tool } from 'react-native-drawing'\nimport { ReactElement, useCallback, useRef, useState } from 'react'\n\nconst App = (): ReactElement => {\n  \n  const [ canUndo, setCanUndo ] = useState( false )\n  const [ canRedo, setCanRedo ] = useState( false )\n  const drawRef = useRef<Draw|null>( null )\n\n  const undo = useCallback( () => {\n    const draw: Draw = drawRef.current!\n    draw.undo()\n  }, [ drawRef ] )\n\n  const redo = useCallback( () => {\n    const draw: Draw = drawRef.current!\n    draw.redo()\n  }, [ drawRef ] )\n\n  const onHistoryMove = useCallback( ( event:HistoryEvent ) => {\n    const { canUndo, canRedo } = event\n    setCanUndo( canUndo )\n    setCanRedo( canRedo )\n  }, [] )\n  \n  return (\n    <>\n      <Draw\n        ref={ drawRef }\n        resolution={ 720 }\n        aspectRatio={ 10 / 16 }\n        color=\"#2196f3\"\n        tool={ Tool.PENCIL }\n        toolSize={ 80 }\n        onHistoryMove={ onHistoryMove } />\n      <Button title=\"←\" disabled={ !canUndo } onPress={ undo } />\n      <Button title=\"→\" disabled={ !canRedo } onPress={ redo } />\n    </>\n  )\n}\n\nexport default App\n",
+    "language": "tsx",
+    "fileName": "App.tsx",
+    "maximizable": true,
+    "preview": "/docs/previews/history.mp4"
+  },
+  {
+    "type": "info",
+    "text": "docs-history-event-listener"
+  }
+]

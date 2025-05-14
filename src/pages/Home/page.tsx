@@ -6,8 +6,10 @@ import HistorySection from './components/HistorySection'
 import PerformanceSection from './components/PerformanceSection'
 import ToolsSection from './components/ToolsSection'
 import { ReactElement } from 'react'
+import { useLocalesOf } from '@/hooks/language'
 
 const Home = (): ReactElement => {
+  useLocalesOf( 'home' )
   return (
     <>
       <HeroSection />

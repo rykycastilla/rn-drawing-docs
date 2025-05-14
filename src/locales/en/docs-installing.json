@@ -1,0 +1,4 @@
+{
+  "docs-installing-how-to-use": "To use `rect-native-drawing` in your Expo project [This library has been tested on Expo SDK 51 and 52], you must install it using the following commands:",
+  "docs-installing-installation-importance": "This ensures the installation of the library and its dependencies for the version of Expo you are using."
+}

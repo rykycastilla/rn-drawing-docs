@@ -1,0 +1,13 @@
+{
+  "docs-getting-started-import-instruction": "Para utilizar el lienzo de dibujo en tu proyecto necesitas importar el componente Draw",
+  "docs-getting-started-required-props-heading": "Props necesarias",
+  "docs-getting-started-required-props-description": "El lienzo de dibujo requiere algunas *props* para poder funcionar correctamente, estas son: **resolution**, **color** y **tool**.",
+  "docs-getting-started-resolution-heading": "Resolution",
+  "docs-getting-started-resolution-description": "Representa la cantidad de píxeles horizontales[Por defecto el ratio de aspecto será 1:1 (cuadrado)] que contendrá la imagen. Un aumento de este valor incrementa la calidad de la imagen y la necesidad de recursos.",
+  "docs-getting-started-color-heading": "Color",
+  "docs-getting-started-color-description": "Define el valor con el que se realizará el dibujo. Este puede ser cualquier codigo de color valido para css (hexadecimal #, funcion rgb, rgba, hsl y palabras clave).",
+  "docs-getting-started-tool-heading": "Tool",
+  "docs-getting-started-tool-description": "Es la herramienta actual que identificará el tipo de trazo.",
+  "docs-getting-started-load-event-heading": "Evento Load",
+  "docs-getting-started-load-event-description": "Otro concepto importante es el evento **Load**, el cual se ejecutará cuando el lienzo de dibujo esté listo para renderizar las imágenes, y por tanto, se pueda comenzar a dibujar sobre él.\nEl callback de **onLoad** recibe un objeto `LoadEvent`, cuya propiedad `target` es la referencia al lienzo de dibujo que generó el evento."
+}

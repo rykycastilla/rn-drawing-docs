@@ -1,0 +1,14 @@
+{
+  "docs-stroke-tools-intro": "Stroke tools allow you to create lines.",
+  "docs-stroke-tools-usage-info": "To use a tool, you must import the Tool enum and pass it to the Draw component's tool prop.",
+  "docs-stroke-tools-pencil-title": "Pencil",
+  "docs-stroke-tools-pencil-description": "The pencil is used through the value `Tool.PENCIL`. This tool can create continuous strokes, with rounded edges and no transparency.",
+  "docs-stroke-tools-pencil-warning": "If the color code contains an alpha channel, it will be ignored for this tool.",
+  "docs-stroke-tools-eraser-title": "Eraser",
+  "docs-stroke-tools-eraser-description": "The eraser removes drawing where it passes, maintaining a \"stroke\" with qualities similar to the pencil. Its value is `Tool.ERASER`.",
+  "docs-stroke-tools-eraser-info": "The color code is ignored when the eraser is in use.",
+  "docs-stroke-tools-tape-title": "Tape",
+  "docs-stroke-tools-tape-description": "The adhesive tape `Tool.TAPE` has an irregular stroke, showing angled cuts when changing direction; it supports transparency and has straight edges (creating a rectangular-shaped stroke).",
+  "docs-stroke-tools-tool-size": "Tool Size",
+  "docs-stroke-tools-toolsize-description": "It is specified by the *prop* **toolSize** (default is 4 pixels). Its purpose is to assign a customizable size to the stroke of the tool being used."
+}

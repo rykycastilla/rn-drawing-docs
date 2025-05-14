@@ -1,0 +1,7 @@
+{
+  "docs-spray-description": "This tool disperses random particles in a given area. Its value is `Tool.SPRAY`",
+  "docs-spray-control-title": "Spray Control",
+  "docs-spray-control": "The **sprayParticles** *prop* allows controlling the scale and quantity of Spray particles through an object with these properties:",
+  "docs-spray-size-variation-title": "Size Variation",
+  "docs-spray-size-variation": "The **toolSize** *prop* can also vary the Spray dispersion, so controlling these values can achieve varied effects."
+}

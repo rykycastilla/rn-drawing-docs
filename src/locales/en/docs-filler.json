@@ -1,0 +1,14 @@
+{
+  "docs-filler-intro": "With this tool you can change the color of an entire area (with the same color) with a single touch. Its value is `Tool.FILLER`.",
+  "docs-filler-warning-alpha": "If the color code contains an alpha channel, it will be ignored for this tool",
+  "docs-filler-warning-multiple-touches": "If the canvas is touched at multiple points simultaneously, the first detected touch action will be rendered. For progressive touches, they will render in order when the previous action finishes.",
+  "docs-filler-warning-canvas-lock": "It's recommended to lock canvas interaction while the filler is executing to prevent errors.",
+  "docs-filler-lock-tip": "[A custom method to lock the canvas should be implemented]",
+  "docs-filler-info-toolsize": "toolSize won't affect the filler",
+  "docs-filler-subtitle-animation": "Animating the Filler",
+  "docs-filler-animation-description": "By default the filler waits a moment (processes) and applies changes, however this process can be made more visually appealing using the **animatedFiller** prop (setting it to `true`), which will trigger a circular expansion animation starting from the next touch.",
+  "docs-filler-warning-animation-performance": "Using animation, while visually attractive, will make the process slower",
+  "docs-filler-resolution-warning": "To increase performance its recommended to decrease resolution",
+  "docs-filler-subtitle-filling-event": "FillingEvent",
+  "docs-filler-filling-event-description": "Every time the filler starts and finishes a task it emits a `FillingEvent`, which can be captured through the **onFilling** prop. Each `FillingEvent` contains the properties **target** (triggering canvas), **isStarting**, **isEnding**, **x**, **y**, and **color**."
+}

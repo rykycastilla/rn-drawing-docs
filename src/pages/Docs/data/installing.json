@@ -1,15 +1,11 @@
-{
-  "target": "installing",
-  "title": "docs-installing-title",
-  "content": [
-      { "type": "p", "text": "docs-installing-how-to-use" },
-      { 
-          "type": "code", 
-          "code": "npx expo install react-native-webview\nnpx expo install react-native-drawing", 
-          "language": "bash", 
-          "fileName": "Shell", 
-          "maximizable": false 
-      },
-      { "type": "p", "text": "docs-installing-installation-importance" }
-  ]
-}
+[
+  { "type": "p", "text": "docs-installing-how-to-use" },
+  { 
+      "type": "code", 
+      "code": "npx expo install react-native-webview\nnpx expo install react-native-drawing", 
+      "language": "bash", 
+      "fileName": "Shell", 
+      "maximizable": false 
+  },
+  { "type": "p", "text": "docs-installing-installation-importance" }
+]
