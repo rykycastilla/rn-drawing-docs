@@ -4,7 +4,7 @@ import { LanguageProvider } from '@/hooks/language'
 import { LegendProvider } from '@/hooks/foot_note'
 import { NotFoundDocProvider } from '@/hooks/docs_location'
 import { Outlet } from 'react-router-dom'
-import { ReactElement } from 'react'
+import { ReactElement, Suspense } from 'react'
 import { ThemeProvider } from '@/libs/ui/hooks/theme'
 
 const HomeLayout = (): ReactElement => {
@@ -16,7 +16,9 @@ const HomeLayout = (): ReactElement => {
             <NavBar />
             <LegendProvider>
               <main className="flex-1">
-                <Outlet />
+                <Suspense>
+                  <Outlet />
+                </Suspense>
               </main>
               <Footer />
             </LegendProvider>
