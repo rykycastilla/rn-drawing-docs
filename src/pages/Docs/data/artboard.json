@@ -1,11 +1,23 @@
 [
   {
-    "type": "p",
-    "text": "docs-grid-description"
+    "type": "subtitle",
+    "text": "docs-artboard-background-color-subtitle"
   },
   {
     "type": "p",
-    "text": "docs-grid-example-square"
+    "text": "docs-artboard-background-color-description"
+  },
+  {
+    "type": "subtitle",
+    "text": "docs-artboard-grid-subtitle"
+  },
+  {
+    "type": "p",
+    "text": "docs-artboard-grid-description"
+  },
+  {
+    "type": "p",
+    "text": "docs-artboard-grid-example-square"
   },
   {
     "type": "code",
@@ -17,7 +29,7 @@
   },
   {
     "type": "p",
-    "text": "docs-grid-example-rectangle"
+    "text": "docs-artboard-grid-example-rectangle"
   },
   {
     "type": "code",
