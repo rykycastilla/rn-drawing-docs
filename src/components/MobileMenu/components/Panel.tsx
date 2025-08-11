@@ -24,7 +24,7 @@ const Panel = ( props:PanelProps ): ReactElement => {
         }`} />
       { /* Panel */ }
       <div
-        className={`fixed top-0 left-0 right-0 bg-background border-b z-50 shadow-lg transition-transform duration-300 transform rounded-b-lg ${
+        className={`fixed top-0 left-0 right-0 bg-background border-b z-50 shadow-lg transition-transform duration-300 transform rounded-b-lg max-h-[100vh] overflow-scroll ${
           isOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
         data-mobile-menu>
