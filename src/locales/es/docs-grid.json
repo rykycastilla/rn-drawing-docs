@@ -1,5 +1,0 @@
-{
-  "docs-grid-description": "Es posible establecer una grilla utilizando la *prop* **grid**. Esta puede recibir un único valor, el cual representará la cantidad de celdas en las que se dividirá el espacio visible en horizontal y vertical, o puede recibir una tupla `[ number, number ]`, en la que el primer numero representará la cantidad de celdas horizontales y el segundo la cantidad de celdas verticales.",
-  "docs-grid-example-square": "Ejemplo de grilla cuadrada (3x3)",
-  "docs-grid-example-rectangle": "Ejemplo de grilla (4x5)"
-}

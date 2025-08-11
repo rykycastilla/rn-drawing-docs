@@ -1,0 +1,11 @@
+{
+  "docs-cursor-description": "The cursor is enabled through the `cursor` prop. When this property is set to `true`, a custom pointer is shown within the artboard. If it's not defined or set to `false`, the cursor will not be visible.",
+  "docs-cursor-cursor-styles-title": "Cursor Styles",
+  "docs-cursor-cursor-styles-description": "The basic cursor styles allow you to define its shape and color through the `cursorStyle` prop, using a style object.",
+  "docs-cursor-cursor-styles-properties": "Using the `borderRadius` property you can set the corner rounding, accepting numeric values or percentages. The background color is defined with `backgroundColor`. You can also modify its `scale` to adjust the size, `opacity` to control transparency, and `display` to toggle showing it (`block`) or hiding it (`none`).",
+  "docs-cursor-border-styles-title": "Border Styles",
+  "docs-cursor-border-styles-description": "The appearance of the cursor's borders is controlled with specific properties. `borderStyle` defines the border type and can be `solid`, `none`, `dashed`, or `dotted`. The width is set with `borderWidth`, while the color is configured with `borderColor`.",
+  "docs-cursor-shadow-styles-title": "Shadow Styles",
+  "docs-cursor-shadow-styles-description": "To enhance visual emphasis, you can apply shadows to the cursor. The `shadowOffset` property lets you set the shadow's offset on the x and y axes by providing an object in the format `{x: number, y: number}` (e.g., `{x: 2, y: 2}`). `shadowBlur` defines the blur level, and `shadowRadius` adjusts the radius; these properties (`shadowBlur` and `shadowRadius`) are limited to `5` and `3`, respectively. The color is specified with `shadowColor`.",
+  "docs-cursor-shadow-styles-warning": "Shadow styles are only available on Android"
+}

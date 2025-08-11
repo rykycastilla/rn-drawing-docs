@@ -26,7 +26,6 @@
   "filling": "Filling",
   "animated-filling": "Animated Filling",
   "home-docs-link": "Discover all the potential in the documentation",
-  "only-android-disclaimer": "Right now, RN Drawing is only fully compatible with Android platform",
   "history-memory-usage-disclaimer": "The limits on the number of snapshots (versions) in history are set based on the device's total memory.",
   "performance-disclaimer": "Metrics obtained on a Galaxy A20 (SM-A205G). Final performance depends on the device running the app."
 }

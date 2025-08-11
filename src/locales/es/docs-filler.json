@@ -7,8 +7,9 @@
   "docs-filler-info-toolsize": "toolSize no afectará al rellenador",
   "docs-filler-subtitle-animation": "Animando el Rellenador",
   "docs-filler-animation-description": "Por defecto el rellenador espera un momento (procesa) y aplica los cambios, sin embargo, este proceso puede hacerse visualmente más atractivo utilizando la *prop* **animatedFiller** (estableciendola a  `true`), esto provocará que se emplee una animación a partir del próximo toque, mostrando un efecto circular que se expande gradualmente.",
-  "docs-filler-warning-animation-performance": "El uso de la animacion, a pesar de ser visualmente atractivo, hará que el proceso sea más lento",
+  "docs-filler-warning-animation-performance": "El uso de la animación, a pesar de ser visualmente atractivo, hará que el proceso sea más lento",
   "docs-filler-resolution-warning": "Para aumentar el rendimiento se recomienda disminuir la resolución",
   "docs-filler-subtitle-filling-event": "FillingEvent",
-  "docs-filler-filling-event-description": "Cada vez que el rellenador comienza y termina una tarea emite un `FillingEvent`, el cual puede ser capturado a través de la *prop* **onFilling**. Cada `FillingEvent` posee las propiedades **target** (lienzo que desencadenó el evento), **isStarting**, **isEnding**, **x**, **y** y **color**."
+  "docs-filler-filling-event-description": "Cada vez que el rellenador comienza y termina una tarea emite un `FillingEvent`, el cual puede ser capturado a través de la *prop* **onFilling**. Cada `FillingEvent` posee las propiedades **target** (lienzo que desencadenó el evento), **isStarting**, **isEnding**, **x**, **y** y **color**.",
+  "docs-filler-animation-support-warning": "La animación no es compatible con iOS 16.3 o inferior"
 }

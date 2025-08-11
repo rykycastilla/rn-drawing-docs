@@ -1,0 +1,8 @@
+{
+  "docs-artboard-background-color-subtitle": "Color de fondo",
+  "docs-artboard-background-color-description": "Puedes establecer el color de fondo del área de trabajo utilizando la *prop* **backgroundColor**. Esta acepta cualquier valor tradicional, admisible en *CSS*.",
+  "docs-artboard-grid-subtitle": "Grilla",
+  "docs-artboard-grid-description": "Es posible establecer una grilla utilizando la *prop* **grid**. Esta puede recibir un único valor, el cual representará la cantidad de celdas en las que se dividirá el espacio visible en horizontal y vertical, o puede recibir una tupla `[ number, number ]`, en la que el primer numero representará la cantidad de celdas horizontales y el segundo la cantidad de celdas verticales.",
+  "docs-artboard-grid-example-square": "Ejemplo de área de trabajo cuadrada (3x3)",
+  "docs-artboard-grid-example-rectangle": "Ejemplo de área de trabajo (4x5)"
+}

@@ -8,7 +8,6 @@ export function useLangsBuilder( pages:Set<string>, langCode:string ): Lang {
   const loadLangPage = useCallback( async( page:string, lang:Lang, isStoped:{ value:boolean } ) => {
     const imported = await import( `@/locales/${ langCode }/${ page }.json` )
     const langSection: Lang = imported.default
-    console.log( langSection )
     if( isStoped.value ) { return }
     Object.assign( lang, langSection )
     setLang( { ...lang } )

@@ -37,6 +37,10 @@
   },
   {
     "type": "warning",
+    "text": "docs-filler-animation-support-warning"
+  },
+  {
+    "type": "warning",
     "text": "docs-filler-warning-animation-performance"
   },
   {
