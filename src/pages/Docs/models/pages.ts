@@ -5,6 +5,7 @@ export const pages: Page[] = [
   new Page( 'getting-started' ),
   new Page( 'image-layout' ),
   new Page( 'artboard' ),
+  new Page( 'cursor' ),
   new Page( 'stroke-tools' ),
   new Page( 'dot-tools' ),
   new Page( 'spray' ),

@@ -1,0 +1,11 @@
+{
+  "docs-cursor-description": "El cursor se activa mediante la prop `cursor`. Cuando esta propiedad se establece en `true`, se muestra un puntero personalizado dentro del área de trabajo. Si no se define o se establece en `false`, el cursor no será visible.",
+  "docs-cursor-cursor-styles-title": "Estilos de cursor",
+  "docs-cursor-cursor-styles-description": "Los estilos básicos del cursor permiten definir su forma y color mediante la prop `cursorStyle`, a través de un objeto de estilos.",
+  "docs-cursor-cursor-styles-properties": "Mediante la propiedad `borderRadius` es posible establecer el redondeo de las esquinas, aceptando valores numéricos o porcentajes. El color de fondo se define con `backgroundColor`. Además, se puede modificar su `scale` para ajustar el tamaño, la `opacity` para controlar la transparencia y `display` para alternar entre mostrarlo (`block`) u ocultarlo (`none`).",
+  "docs-cursor-border-styles-title": "Estilos de bordes",
+  "docs-cursor-border-styles-description": "La apariencia de los bordes del cursor se controla con propiedades específicas. `borderStyle` define el tipo de borde, pudiendo ser `solid`, `none`, `dashed` o `dotted`. El ancho se establece con `borderWidth`, mientras que el color se configura con `borderColor`.",
+  "docs-cursor-shadow-styles-title": "Estilos de sombra",
+  "docs-cursor-shadow-styles-description": "Para dar mayor realce visual, es posible aplicar sombras al cursor. La propiedad `shadowOffset` permite establecer mediante un objeto el desplazamiento de la sombra en los ejes x e y, utilizando los valores de los ejes como propiedades. Con `shadowBlur` se define el nivel de desenfoque y con `shadowRadius` se ajusta el radio; estas propiedades (`shadowBlur` y `shadowRadius`) están limitadas a `5` y `3` respectivamente. El color se especifica mediante `shadowColor`.",
+  "docs-cursor-shadow-styles-warning": "Los estilos de sombra solo están disponibles en Android"
+}
