@@ -2,6 +2,7 @@ import CommandButton from './components/CommandButton'
 import Maximize from './components/Maximize'
 import Preview from './components/Preview'
 import SyntaxHighlighter from './components/SyntaxHighlighter'
+import { IS_FULL_SCREEN_AVAILABLE } from '@/constants'
 import { ReactElement, useCallback, useState, useRef } from 'react'
 import { useFullScreen } from './hooks/full_screen'
 import { useImmersivePreview } from './hooks/immersive_preview'
@@ -50,7 +51,7 @@ const Code = ( props:CodeProps ): ReactElement => {
         className="bg-gray-800 px-4 py-2 text-sm text-gray-300 font-mono border-b border-gray-700 flex justify-between items-cente">
         <div>{ fileName }</div>
         <div className="flex items-center gap-2 ml-auto">
-          { maximizable && <Maximize isFullScreen={ isFullScreen } toggleFullScreen={ toggleFullScreen } /> }
+          { ( maximizable && IS_FULL_SCREEN_AVAILABLE ) && <Maximize isFullScreen={ isFullScreen } toggleFullScreen={ toggleFullScreen } /> }
           { preview && <CommandButton disabled={ !preview } isPlaying={ isPlaying } togglePlay={ togglePlay } /> }
         </div>
       </div>
