@@ -1,5 +1,5 @@
 {
-  "docs-cursor-description": "El cursor se activa mediante la prop `cursor`. Cuando esta propiedad se establece en `true`, se muestra un puntero personalizado dentro del área de trabajo. Si no se define o se establece en `false`, el cursor no será visible.",
+  "docs-cursor-description": "El cursor se activa mediante la prop `cursor`. Cuando esta propiedad se establece en `true`, se muestra un puntero personalizado mientras se realiza el trazo dentro del área de trabajo. Si no se define o se establece en `false`, el cursor no será visible.",
   "docs-cursor-cursor-styles-title": "Estilos de cursor",
   "docs-cursor-cursor-styles-description": "Los estilos básicos del cursor permiten definir su forma y color mediante la prop `cursorStyle`, a través de un objeto de estilos.",
   "docs-cursor-cursor-styles-properties": "Mediante la propiedad `borderRadius` es posible establecer el redondeo de las esquinas, aceptando valores numéricos o porcentajes. El color de fondo se define con `backgroundColor`. Además, se puede modificar su `scale` para ajustar el tamaño, la `opacity` para controlar la transparencia y `display` para alternar entre mostrarlo (`block`) u ocultarlo (`none`).",
