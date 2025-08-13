@@ -1,5 +1,5 @@
 {
-  "docs-cursor-description": "The cursor is enabled through the `cursor` prop. When this property is set to `true`, a custom pointer is shown within the artboard. If it's not defined or set to `false`, the cursor will not be visible.",
+  "docs-cursor-description": "The cursor is enabled through the `cursor` prop. When this property is set to `true`, a custom pointer is shown while drawing a stroke within the artboard. If it's not defined or set to `false`, the cursor will not be visible.",
   "docs-cursor-cursor-styles-title": "Cursor Styles",
   "docs-cursor-cursor-styles-description": "The basic cursor styles allow you to define its shape and color through the `cursorStyle` prop, using a style object.",
   "docs-cursor-cursor-styles-properties": "Using the `borderRadius` property you can set the corner rounding, accepting numeric values or percentages. The background color is defined with `backgroundColor`. You can also modify its `scale` to adjust the size, `opacity` to control transparency, and `display` to toggle showing it (`block`) or hiding it (`none`).",
